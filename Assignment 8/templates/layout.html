@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Booking Site{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>MyBooking</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for("index") }}">Properties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% if msg is defined %}<div class="placeholder message">{{ msg }}</div>{% endif %}
+    {% if err is defined %}<div class="placeholder error">{{ err }}</div>{% endif %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="contact">
+            <span class="strong">Customer service:</span> |
+            +47 321 09 87654 |
+            <a href="#">contact@noreply.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>

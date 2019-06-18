@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %} | Property #{{ prop.property_id }} {% endblock %}
+{% block content %}
+
+<div class="placeholder">
+    <h2>Book <strong>{{ prop.property_name }}</strong></h2>
+    {{ prop.property_details }}
+    <br />
+    <br />
+    <form action="{{ url_for("book") }}" method="POST">
+        <input type="hidden" name="property_id" value="{{ prop.property_id }}" />
+        <label>Check-in: <input type="date" name="checkin" size="10" required /></label>
+        <label></label>Nights:
+        <select name="nights">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select></label>
+        <input type="submit" value="Book property">
+    </form>
+</div>
+
+{% endblock %}

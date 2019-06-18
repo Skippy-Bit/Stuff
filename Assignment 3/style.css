@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* General */
+
+* {
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.framedBoxes {
+    border: 1px solid #343838;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+.text {
+    word-wrap: normal;
+}
+
+.img {
+    height: 150px;
+    width: 200px;
+}
+
+.wrap {
+    min-height: 100%;
+    margin-bottom: -120px;
+}
+
+.wrap:after {
+    content: "";
+    display: block;
+    height: 120px;
+}
+
+.overlay {
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.45);
+    bottom: 2px;
+    padding: 5px 10px;
+    position: absolute;
+}
+
+.main {
+    display: block;
+}
+
+.framedbox {
+    margin: 10px 0;
+    border: 1px solid #005F6B;
+    padding: 12px;
+}
+
+.framedbox .imgdiv, .framedbox .textdiv {
+    display: inline-block;
+}
+
+.description {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.description::first-line {
+    font-weight: bold;
+}
+
+.checkin {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.imgdiv {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.textdiv {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 80%;
+    position: relative;
+    min-height: 150px;
+}
+
+.text {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.bookingbutton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.checkoutform label {
+    display: inline-block;
+    text-align: right;
+    width: 20%;
+    min-width: 50px;
+}
+
+.checkoutform input, .checkoutform select {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px
+}
+
+.topalign {
+    vertical-align: text-top;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header */
+
+header {
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #005F6B;
+    z-index: 5;
+}
+
+header img {
+    height: 60px;
+    position: absolute;
+    left: 5%;
+    z-index: 9999;
+}
+
+header nav {
+    height: inherit;
+    right: 5%;
+}
+
+header nav ul {
+    height: inherit;
+    list-style-type: none;
+    margin: 0 5% 0 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header nav li {
+    height: inherit;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+    border-right: 1px solid #343838;
+}
+
+header nav li:last-child {
+    border-left: 1px solid #343838;
+}
+
+header nav li a {
+    height: inherit;
+    box-sizing: border-box;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* Main */
+
+main {
+    margin: 100px auto 0 auto;
+    height: 100%;
+    width: 90%;
+    min-width: 800px;
+    max-width: 1200px;
+}
+
+main h1 {
+    font-size: 1.2em;
+    padding: 5px;
+    background-color: #008C9E;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    height: 120px;
+    border-top: 5px solid #005F6B;
+    background-color: #008C9E;
+    color: white;
+    margin: 0 auto;
+}
+
+footer .footer {
+    margin: auto;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #343838;
+}
+
+/* Main page */
+
+.imagebanner {
+    width: 100%;
+    border-top: 5px solid #343838;
+    border-bottom: 5px solid #343838;
+}
+
+.indextitle {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    background-color: #005F6B;
+}
+
+.articles {
+    width: 100%;
+    /* Safari */
+    display: -webkit-flex;
+    /* Safari 6.1+ */
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+article {
+    justify-content: space-evenly;
+    position: relative;
+    margin: 1% 2.5%;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #343838;
+}
+
+article div {
+    display: inline-block;
+}
+
+article h3 {
+    margin: 0;
+    top: 5px;
+}
+
+article button {
+    color: white;
+    background-color: #005F6B;
+    position: absolute;
+    outline: 1px solid #343838;
+    bottom: 0;
+    right: 0;
+    padding: 4px 8px;
+    margin: 5px;
+}
+
+article:hover {
+    background-color: #008C9E;
+    border: 1px outset #00DFFC;
+}
+
+article button:hover {
+    background-color: #008C9E;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="filter framedbox">
+            <div>
+                <input type="text" id="filterText">
+                <button onclick="togglesort();">
+                    <i class="fas fa-sort-amount-down"></i>
+                </button>
+                <select id="filtertype" onselect="filter();">
+                    <option value="name">Name</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">E-Mail</option>
+                </select>
+            </div>
+            <div class="right vertical-center">
+                <button onclick="toggle_visibility('adddiv');">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="addcontact framedbox" id="adddiv">
+            <div>
+                Name:<input type="text" id="newname">
+                Phone:<input type="text" id="newphone">
+                E-Mail:<input type="text" id="newemail">
+            </div>
+            <div class="right vertical-center">
+                <button onclick="addnew();">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="contactlist framedbox">
+
+        </div>
+    </div>
+</body>
+
+</html>

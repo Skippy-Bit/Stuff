@@ -1,0 +1,23 @@
+{% extends "booking.html" %}
+{% block booking %}
+<h3>Personal details</h3>
+
+Check-in: {{ checkin }}
+<br />
+Check-out: {{ checkout }} <small>({{ nights }} nights)</small>
+<br />
+<br />
+
+<form action="{{ url_for("book") }}" method="POST">
+    <input type="hidden" name="action" value="do_1" />
+    <input name="name" placeholder="Name" value="{{ form_name }}" required />
+    <input type="email" name="email" placeholder="E-Mail" value="{{ form_email }}" required />
+    <input type="tel" name="phone" placeholder="Phone" value="{{ form_phone }}" required />
+    <input name="street_name" placeholder="Street Name" value="{{ form_street_name }}" required />
+    <input name="zipcode" placeholder="Zip Code" value="{{ form_zipcode }}" required />
+    <input name="city" placeholder="City" value="{{ form_city }}" required />
+    <input name="country" placeholder="Country" value="{{ form_country }}" required />
+    <textarea name="comment" placeholder="Comment">{{ form_comment }}</textarea>
+    <input type="submit" value="Book property" />
+</form>
+{% endblock %}

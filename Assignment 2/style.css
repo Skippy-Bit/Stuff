@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Generelt */
+
+* {
+    font-family: Verdana, sans-serif;
+}
+
+#header, #footer {
+    width: 100%;
+}
+
+p, h1, h2, h3 {
+    padding: 0 10px;
+}
+
+body {
+    margin: 0 0 10px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+#header {
+    background-color: royalblue;
+    border: 1px outset darkblue;
+    box-sizing: border-box;
+}
+
+#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
+    color: white;
+    text-shadow: 2px 2px 2px #333;
+}
+
+#header h1 {
+    margin-bottom: 0;
+}
+
+#header h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-family: Garamond, serif;
+    font-style: italic;
+}
+
+/* Content */
+
+.place .rank {
+    color: white;
+    background-color: black;
+}
+
+#content p {
+    text-align: justify;
+    text-indent: 2em;
+    color: #999999;
+}
+
+#content p::first-line {
+    color: black;
+}
+
+#content h2 {
+    border-bottom: 1px solid #999999;
+}
+
+/* Footer */
+
+#footer {
+    background-color: black;
+}
+
+#footer li a {
+    color: white;
+}
+
+#footer li {
+    list-style-type: circle;
+    color: white;
+}
+
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+    color: white;
+}
+
+#footer li:nth-child(2) {
+    font-weight: bold;
+}
+
+#footer li:nth-child(-n+2) {
+    list-style-type: disc;
+}
+
+#footer p {
+    text-align: center;
+    color: yellow;
+    font-style: oblique;
+}

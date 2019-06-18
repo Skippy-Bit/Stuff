@@ -1,0 +1,5 @@
+1	Coldplay	A Rush of Blood to the Head	Coldplay-ARushofBlood.jpg
+2	Guns N' Roses	Use Your Illusion I	GnR-UseYourIllusion1.jpg
+3	Alan Walker	Different World	alanwalker-dw.jpg
+4	The Rolling Stones	Sticky Fingers	RS-StickyFingers.jpg
+5	Eminem	Encore	Eminem-Encore.jpg

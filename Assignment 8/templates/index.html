@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<img src="static/images/background.jpg" alt="Skiing destinations" class="banner" />
+
+<h1>Properties</h1>
+
+{% if props %}
+{% for row in props %}
+<article class="framed column">
+    <div class="prop_left">
+        <img src="static/images/{{ row.property_photo }}" alt="{{ row.property_name }}" width="200px" />
+
+        <div class="place">{{ row.property_location }}</div>
+    </div>
+    <div class="prop_right">
+        <h3>{{ row.property_name }}</h3>
+
+        <p>{{ row.property_description }}</p>
+    </div>
+    <a href="{{ url_for("property", property_id=row.property_id) }}">
+        <div class="details">Details</div>
+    </a>
+</article>
+{% endfor %}
+{% endif %}
+{% endblock %}
