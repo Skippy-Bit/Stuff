@@ -1,0 +1,10 @@
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\obj\Debug\StangelandWarehouse.csprojAssemblyReference.cache
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\obj\Debug\StangelandWarehouse.csproj.CoreCompileInputs.cache
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\bin\Debug\StangelandWarehouse.dll
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\bin\Debug\StangelandWarehouse.pdb
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\bin\Debug\Newtonsoft.Json.dll
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\bin\Debug\Newtonsoft.Json.xml
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\obj\Debug\StangelandWarehouse.csproj.CopyComplete
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\obj\Debug\StangelandWarehouse.dll
+C:\Users\salun\source\repos\StangelandWarehouse\StangelandWarehouse\obj\Debug\StangelandWarehouse.pdb
