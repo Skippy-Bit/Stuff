@@ -1,0 +1,168 @@
+Name
+ - Angir navnet på feltet, bør holdes uendret.
+ - Brukes i ${...}
+Description
+ - Visuell beskrivelse av feltet, dette kan endres.
+
+
+Required
+ - Angir alle typer som pålagt/obligatorisk.
+
+Type
+
+String
+ - Min og Max angir lengde på streng.
+Integer
+ - Min og Max angir ytre grenser (inkl.)
+ - Default Value angir startverdi (explicit cast).
+Double
+ - Min og Max angir ytre grenser (inkl.)
+ - Default Value angir startverdi.
+Boolean
+ - Default Value angir startverdi (0 = false, alt annet = true).
+Radio,Dropdown,Checkbox
+ - OptionString og OptionCaption angir verdier og titler.
+ - Default Value angir startverdi (0-based indeks av valg).
+Checkbox
+ - Min og Max angir maks antall valgte bokser.
+
+!!!
+Button
+ - Utfører en handling når man trykker på den.
+Action
+ - Definerer handlingen for en knapp.
+    - Cancel: Lukker skjemaet og går tilbake til forrige side.
+    - Save: Lagrer skjemaet og går tilbake til forrige side.
+    - Reset: Tømmer skjemaet.
+    - Save and Reset: Lagrer skjemaet og tømmer det (klar til ny innfylling).
+Position
+ - Angir posisjonen til en knapp.
+    - blank: Havner på samme plass som den er plassert i listen.
+    - Footer: Legger knappen nede i Footer.
+    - Action: Legger knappen oppe i ActionBar.
+Icon
+ - Angir et ikon som knappen skal bruke. Dersom beskrivelse er tom, blir knappen en IconButton, hvis ikke blir knappen en MaterialButton med ikonet som leading.
+ - Ikon kan angis på alle typer felt. Dersom det angis på noe annet enn button, blir det vist før beskrivelsesteksten.
+Is Raised
+ - Angir om knappen er av typ: Raised Button.
+Importance
+ - Angir viktighet (fargevalg).
+    - Primary: Får hovedfarge.
+    - Secondary: Får aksentfarge.
+!!!
+
+
+Is List
+ - Min Elements og Max Elements angir ytre grenser (inkl.) på antall.
+ - Putter widget inn i "+Add list".
+
+
+// Provides assistance and rigor to users when assigning values to fields. Limits their choices and prevents bad input.
+Relational Lookup Type
+ - blank, Dropdown, Search.
+Relational Lookup Limit
+ - Avgrenser maks antall returnerte elementer fra SQL-spørring, for å hindre ytelsesproblemer.
+Relational Where Query
+ - Oppslagsavgrensing (OBS: ren SQL! For å bruke verdier fra andre felt, se lenger nede i notatet)
+
+
+Text Field Line Count
+ - Hvis Text Field Line Count er ulik 0, sett "keyboardType: TextInputType.multiline" og "maxLines: Text_Field_Line_Count" på TextField.
+
+
+String,Integer,Double
+ - "Suffix Text" gir suffiks tekst.
+ - "Prefix Text" gir prefiks tekst.
+
+
+
+
+
+Alle relasjoner og uttrykk hvor verdiene blir prosessert, kan man skrive inn ${Felt Navn} og få den nåværende verdien til feltet med det gitte navnet.
+Dermed kan man gjøre oppslag som:
+- SELECT Description FROM WorkType WHERE Code = ${Work_Type_Code_Field}
+Som da eksempelvis gir:
+- SELECT Description FROM WorkType WHERE Code = 'TIMER'
+
+
+Alle property-felt, eksempelvis Suffix Text, Color eller Prefix Text, kan begynne linjen med @, som indikerer oppslag.
+ - Syntax: @{TableName.FieldToRetrieve|Where Clause with Spaces and all the good stuff}
+ - Appends LIMIT 1 automatically to query (most of the time we only want a "single value for a single value field").
+ - Lag dialog page for å enkelt lage disse. Legg til på drilldown/assistedit -> Åpner page med 3 felt, 1 som har samme type oppslag som Relational Table Name (webservice med E7MR). 1 som man kan skrive inn feltnavn (senere generer vi en liste over disse). Og 1, hvor man kan angi WHERE clause (med eller uten ${...}).
+
+
+Syntax Parse Order:
+1. Trim new-lines and tabs.
+2. ${...} - Field value expansion
+3. @function(...) - Function expansion
+    - @SELECT(...)
+    - @=(...)
+    - @TRIM(${foo} KM) - Expands to: (foo + ' KM').trim()
+4. Remove escape characters
+
+Special character-sequences (escape character: '\'):
+ - @ABC(
+ - @(
+ - !(
+ - =(
+ - )
+ - ${
+ - }
+ - ,
+
+New-lines and tabulators are achieved by \n and \t respectively.
+
+Function list (case insensitive):
+    Relational
+ #TODO- @SELECT(table_name,field_name,after_where_query,field_name_display...): dynamic    // Ex.: @SELECT(JobTask, Type, A=$ ORDER BY userName LIMIT 20, )
+                                                                                        // In a SELECT function's after_where_query,
+                                                                                        // $ is the value of the search query.
+ #TODO- @(...) -> Shorthand for @SELECT(...)
+ #TODO- @COUNT(table_name,after_where_query): int
+
+    String
+ - @TRIM(str_val): String
+ - @TRIMLEFT(str_val): String
+ - @TRIMRIGHT(str_val): String
+ - @TRIML(...) -> Shorthand for @TRIMLEFT(...)
+ - @TRIMR(...) -> Shorthand for @TRIMRIGHT(...)
+ - @SUBSTR(str_val, start_index, length): String
+ - @LOWER(str_val): String
+ - @UPPER(str_val): String
+ - @LENGTH(str_val): int
+ - @LEN(...) -> Shorthand for @LENGTH(...)
+ - @FORMATDOUBLEFIXED(double_val,fraction_digits): String
+ #TODO- @REGEX(pattern,str_val): String              // Returns the matched string. Ex.: @REGEX(\d+$,${description})
+ #TODO- @REGEX(pattern,str_val,select_expr): String  // Returns the result of select_expr. Ex.: @REGEX(^(\w+)\s+(\d+)$,${description},$1-$2)
+ #TODO- @REPLACE(pattern,str_val,replace_with): String
+ #TODO- @TEST(pattern,str_val): bool
+
+    Numerical
+ - @MIN(num_val...): num
+ - @MAX(num_val...): num
+ - @MEAN(num_val...): num
+ - @MEDIAN(num_val...): num
+ - @MODE(num_val...): num
+ - @POW(num_val,power): num
+ - @PARSENUM(str_val, def_value): num
+ - @PARSEINT(str_val, def_value): int
+ - @PARSEDOUBLE(str_val, def_value): double
+ - @FLOOR(num_val): int
+ - @CEIL(num_val): int
+ - @ROUND(num_val): int
+ #TODO- @MATH(algebraic_expression): num     //            Ex.: @MATH(@FLOOR(@MATH(2^${Quantity})) / 4)
+ #TODO- =(...) -> Shorthand for @MATH(...)   // With shorthand: =(@FLOOR(=(2^${Quantity})) / 4)
+
+    Boolean
+ - @INVERT(bool_val): bool
+ - !(...) -> Shorthand for @INVERT(...)
+ - @EQUAL(value...): bool
+ - @EQ() -> Shorthand for @EQUAL(...)
+ - @AND(value...): bool
+ - @OR(value...): bool
+
+Optimize data structure for recompute:
+ - When compiling, use references/getters to ${...} expressions. Automatically using the most fresh values.
+ - Precompute static expressions (no ${...} children). Serve cached result.
+ - Math expressions using the library, substitute direct ${...} children with Variables. Reuse of compiled expression.
+

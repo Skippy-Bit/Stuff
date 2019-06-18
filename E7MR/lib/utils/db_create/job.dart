@@ -1,0 +1,36 @@
+const CREATE_TABLE_JOB = '''
+CREATE TABLE Job(
+  User TEXT,
+  _InternalState INTEGER,
+  ETag TEXT,
+  Fields TEXT,
+  No TEXT,
+  Description TEXT,
+  Starting_Date TEXT,
+  Ending_Date TEXT,
+  Status TEXT,
+  Person_Responsible TEXT,
+  PersonResponsibleName TEXT,
+  Project_Manager TEXT,
+  Project_Manager_Name TEXT,
+  Ship_to_Name TEXT,
+  Ship_to_Name_2 TEXT,
+  Ship_to_Contact TEXT,
+  Ship_to_Address TEXT,
+  Ship_to_Address_2 TEXT,
+  Ship_to_City TEXT,
+  Ship_to_Post_Code TEXT,
+  Bill_to_Name TEXT,
+  Bill_to_Address TEXT,
+  Bill_to_City TEXT,
+  Bill_to_County TEXT,
+  Bill_to_Post_Code TEXT,
+  Bill_to_Country_Region_Code TEXT,
+  Bill_to_Contact TEXT,
+  Last_Date_Modified TEXT,
+  _DetailFields BLOB
+)''';
+const CREATE_INDICES_JOB = [
+  'CREATE INDEX IF NOT EXISTS index_pk_job ON Job(User,No,_InternalState);',
+  'CREATE INDEX IF NOT EXISTS index_internalstate_job ON Job(User,_InternalState);',
+];

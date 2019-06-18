@@ -1,0 +1,9 @@
+# Referenced at C:\Users\salun\Documents\E7MR\Flutter\E7MR\build\app\intermediates\manifests\full\release\AndroidManifest.xml:33
+-keep class io.flutter.app.FlutterApplication { <init>(...); }
+
+# Referenced at C:\Users\salun\Documents\E7MR\Flutter\E7MR\build\app\intermediates\manifests\full\release\AndroidManifest.xml:63
+-keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(...); }
+
+# Referenced at C:\Users\salun\Documents\E7MR\Flutter\E7MR\build\app\intermediates\manifests\full\release\AndroidManifest.xml:38
+-keep class no.eseven.mr.MainActivity { <init>(...); }
+

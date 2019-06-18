@@ -1,0 +1,27 @@
+Alt i toppnivået er ren tekst
+
+Script begynner ikke før første
+${...}
+${...} - Begynner alltid ny kontekst, selv inne i '...'
+
+
+
+'...' - Angir tekst i script uttrykk
+'..\'..' - \' blir til '
+
+Lovlig:
+'..${.. + '..${...}' + ...}..'
+
+
+
+Inne i script-blokk blir alle whitespace fjernet.
+    ${   ABC(a, b) & '...' & CDE(...)}
+->  ${ABC(a,b)&'...'&CDE(...)}
+
+
+
+& - Angir tekstsammenslåing (concat)
++-*/ - Matematiske operatorer
+
+
+'abc sdf\' a${...}sdfa${...}sdfasdf'

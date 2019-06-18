@@ -1,0 +1,2077 @@
+android.support.v4.app.INotificationSideChannel
+android.support.v4.app.INotificationSideChannel$Stub
+android.support.v4.app.INotificationSideChannel$Stub$Proxy
+android.support.v4.media.MediaBrowserCompat:
+    static final java.lang.String TAG
+    public static final java.lang.String EXTRA_PAGE
+    public static final java.lang.String EXTRA_PAGE_SIZE
+    public static final java.lang.String EXTRA_MEDIA_ID
+    public static final java.lang.String EXTRA_DOWNLOAD_PROGRESS
+    public static final java.lang.String CUSTOM_ACTION_DOWNLOAD
+    public static final java.lang.String CUSTOM_ACTION_REMOVE_DOWNLOADED_FILE
+    private final android.support.v4.media.MediaBrowserCompat$MediaBrowserImpl mImpl
+    187:199:public MediaBrowserCompat(android.content.Context,android.content.ComponentName,android.support.v4.media.MediaBrowserCompat$ConnectionCallback,android.os.Bundle)
+    209:210:public void connect()
+    217:218:public void disconnect()
+    224:224:public boolean isConnected()
+    232:232:public android.content.ComponentName getServiceComponent()
+    245:245:public java.lang.String getRoot()
+    255:255:public android.os.Bundle getExtras()
+    270:270:public android.support.v4.media.session.MediaSessionCompat$Token getSessionToken()
+    293:300:public void subscribe(java.lang.String,android.support.v4.media.MediaBrowserCompat$SubscriptionCallback)
+    327:337:public void subscribe(java.lang.String,android.os.Bundle,android.support.v4.media.MediaBrowserCompat$SubscriptionCallback)
+    351:355:public void unsubscribe(java.lang.String)
+    370:377:public void unsubscribe(java.lang.String,android.support.v4.media.MediaBrowserCompat$SubscriptionCallback)
+    388:389:public void getItem(java.lang.String,android.support.v4.media.MediaBrowserCompat$ItemCallback)
+    404:411:public void search(java.lang.String,android.os.Bundle,android.support.v4.media.MediaBrowserCompat$SearchCallback)
+    426:430:public void sendCustomAction(java.lang.String,android.os.Bundle,android.support.v4.media.MediaBrowserCompat$CustomActionCallback)
+    443:443:public android.os.Bundle getNotifyChildrenChangedOptions()
+android.support.v4.media.MediaBrowserCompat$CallbackHandler
+android.support.v4.media.MediaBrowserCompat$ConnectionCallback
+android.support.v4.media.MediaBrowserCompat$ConnectionCallback$ConnectionCallbackInternal
+android.support.v4.media.MediaBrowserCompat$ConnectionCallback$StubApi21
+android.support.v4.media.MediaBrowserCompat$CustomActionCallback:
+    921:921:public MediaBrowserCompat$CustomActionCallback()
+android.support.v4.media.MediaBrowserCompat$CustomActionResultReceiver:
+    2302:2306:MediaBrowserCompat$CustomActionResultReceiver(java.lang.String,android.os.Bundle,android.support.v4.media.MediaBrowserCompat$CustomActionCallback,android.os.Handler)
+android.support.v4.media.MediaBrowserCompat$ItemCallback:
+    final java.lang.Object mItemCallbackObj
+    844:850:public MediaBrowserCompat$ItemCallback()
+android.support.v4.media.MediaBrowserCompat$ItemCallback$StubApi23
+android.support.v4.media.MediaBrowserCompat$ItemReceiver:
+    2239:2242:MediaBrowserCompat$ItemReceiver(java.lang.String,android.support.v4.media.MediaBrowserCompat$ItemCallback,android.os.Handler)
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImpl
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$1
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$2
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$3
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$4
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$5
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$6
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$7
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi23
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi26
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$1
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$2
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$3
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$4
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$5
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$6
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$1
+android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$2
+android.support.v4.media.MediaBrowserCompat$MediaBrowserServiceCallbackImpl
+android.support.v4.media.MediaBrowserCompat$MediaItem:
+    public static final int FLAG_BROWSABLE
+    public static final int FLAG_PLAYABLE
+    487:494:public static android.support.v4.media.MediaBrowserCompat$MediaItem fromMediaItem(java.lang.Object)
+    508:515:public static java.util.List fromMediaItemList(java.util.List)
+    524:533:public MediaBrowserCompat$MediaItem(android.support.v4.media.MediaDescriptionCompat,int)
+    580:580:public int getFlags()
+    588:588:public boolean isBrowsable()
+    596:596:public boolean isPlayable()
+    603:603:public android.support.v4.media.MediaDescriptionCompat getDescription()
+    611:611:public java.lang.String getMediaId()
+android.support.v4.media.MediaBrowserCompat$MediaItem$Flags
+android.support.v4.media.MediaBrowserCompat$SearchCallback:
+    895:895:public MediaBrowserCompat$SearchCallback()
+android.support.v4.media.MediaBrowserCompat$SearchResultReceiver:
+    2268:2272:MediaBrowserCompat$SearchResultReceiver(java.lang.String,android.os.Bundle,android.support.v4.media.MediaBrowserCompat$SearchCallback,android.os.Handler)
+android.support.v4.media.MediaBrowserCompat$ServiceBinderWrapper
+android.support.v4.media.MediaBrowserCompat$Subscription
+android.support.v4.media.MediaBrowserCompat$SubscriptionCallback
+android.support.v4.media.MediaBrowserCompat$SubscriptionCallback$StubApi21
+android.support.v4.media.MediaBrowserCompat$SubscriptionCallback$StubApi26
+android.support.v4.media.MediaBrowserCompatApi21
+android.support.v4.media.MediaBrowserCompatApi21$ConnectionCallback
+android.support.v4.media.MediaBrowserCompatApi21$ConnectionCallbackProxy
+android.support.v4.media.MediaBrowserCompatApi21$MediaItem
+android.support.v4.media.MediaBrowserCompatApi21$SubscriptionCallback
+android.support.v4.media.MediaBrowserCompatApi21$SubscriptionCallbackProxy
+android.support.v4.media.MediaBrowserCompatApi23
+android.support.v4.media.MediaBrowserCompatApi23$ItemCallback
+android.support.v4.media.MediaBrowserCompatApi23$ItemCallbackProxy
+android.support.v4.media.MediaBrowserCompatApi26
+android.support.v4.media.MediaBrowserCompatApi26$SubscriptionCallback
+android.support.v4.media.MediaBrowserCompatApi26$SubscriptionCallbackProxy
+android.support.v4.media.MediaDescriptionCompat:
+    public static final java.lang.String EXTRA_BT_FOLDER_TYPE
+    public static final long BT_FOLDER_TYPE_MIXED
+    public static final long BT_FOLDER_TYPE_TITLES
+    public static final long BT_FOLDER_TYPE_ALBUMS
+    public static final long BT_FOLDER_TYPE_ARTISTS
+    public static final long BT_FOLDER_TYPE_GENRES
+    public static final long BT_FOLDER_TYPE_PLAYLISTS
+    public static final long BT_FOLDER_TYPE_YEARS
+    public static final java.lang.String EXTRA_DOWNLOAD_STATUS
+    public static final long STATUS_NOT_DOWNLOADED
+    public static final long STATUS_DOWNLOADING
+    public static final long STATUS_DOWNLOADED
+    public static final java.lang.String DESCRIPTION_KEY_MEDIA_URI
+    public static final java.lang.String DESCRIPTION_KEY_NULL_BUNDLE_FLAG
+    220:220:public java.lang.String getMediaId()
+    230:230:public java.lang.CharSequence getTitle()
+    240:240:public java.lang.CharSequence getSubtitle()
+    250:250:public java.lang.CharSequence getDescription()
+    260:260:public android.graphics.Bitmap getIconBitmap()
+    270:270:public android.net.Uri getIconUri()
+    280:280:public android.os.Bundle getExtras()
+    290:290:public android.net.Uri getMediaUri()
+android.support.v4.media.MediaDescriptionCompatApi21:
+    107:108:private MediaDescriptionCompatApi21()
+android.support.v4.media.MediaDescriptionCompatApi21$Builder:
+    103:104:private MediaDescriptionCompatApi21$Builder()
+android.support.v4.media.MediaDescriptionCompatApi23:
+    38:39:private MediaDescriptionCompatApi23()
+android.support.v4.media.MediaDescriptionCompatApi23$Builder:
+    34:35:private MediaDescriptionCompatApi23$Builder()
+android.support.v4.media.MediaMetadataCompat:
+    private static final java.lang.String TAG
+    public static final java.lang.String METADATA_KEY_TITLE
+    public static final java.lang.String METADATA_KEY_ARTIST
+    public static final java.lang.String METADATA_KEY_DURATION
+    public static final java.lang.String METADATA_KEY_ALBUM
+    public static final java.lang.String METADATA_KEY_AUTHOR
+    public static final java.lang.String METADATA_KEY_WRITER
+    public static final java.lang.String METADATA_KEY_COMPOSER
+    public static final java.lang.String METADATA_KEY_COMPILATION
+    public static final java.lang.String METADATA_KEY_DATE
+    public static final java.lang.String METADATA_KEY_YEAR
+    public static final java.lang.String METADATA_KEY_GENRE
+    public static final java.lang.String METADATA_KEY_TRACK_NUMBER
+    public static final java.lang.String METADATA_KEY_NUM_TRACKS
+    public static final java.lang.String METADATA_KEY_DISC_NUMBER
+    public static final java.lang.String METADATA_KEY_ALBUM_ARTIST
+    public static final java.lang.String METADATA_KEY_ART
+    public static final java.lang.String METADATA_KEY_ART_URI
+    public static final java.lang.String METADATA_KEY_ALBUM_ART
+    public static final java.lang.String METADATA_KEY_ALBUM_ART_URI
+    public static final java.lang.String METADATA_KEY_USER_RATING
+    public static final java.lang.String METADATA_KEY_RATING
+    public static final java.lang.String METADATA_KEY_DISPLAY_TITLE
+    public static final java.lang.String METADATA_KEY_DISPLAY_SUBTITLE
+    public static final java.lang.String METADATA_KEY_DISPLAY_DESCRIPTION
+    public static final java.lang.String METADATA_KEY_DISPLAY_ICON
+    public static final java.lang.String METADATA_KEY_DISPLAY_ICON_URI
+    public static final java.lang.String METADATA_KEY_MEDIA_ID
+    public static final java.lang.String METADATA_KEY_MEDIA_URI
+    public static final java.lang.String METADATA_KEY_BT_FOLDER_TYPE
+    public static final java.lang.String METADATA_KEY_ADVERTISEMENT
+    public static final java.lang.String METADATA_KEY_DOWNLOAD_STATUS
+    static final int METADATA_TYPE_LONG
+    static final int METADATA_TYPE_TEXT
+    static final int METADATA_TYPE_BITMAP
+    static final int METADATA_TYPE_RATING
+    private android.support.v4.media.MediaDescriptionCompat mDescription
+    368:371:MediaMetadataCompat(android.os.Bundle)
+    384:384:public boolean containsKey(java.lang.String)
+    396:396:public java.lang.CharSequence getText(java.lang.String)
+    408:412:public java.lang.String getString(java.lang.String)
+    423:423:public long getLong(java.lang.String)
+    434:447:public android.support.v4.media.RatingCompat getRating(java.lang.String)
+    458:465:public android.graphics.Bitmap getBitmap(java.lang.String)
+    474:552:public android.support.v4.media.MediaDescriptionCompat getDescription()
+    571:571:public int size()
+    580:580:public java.util.Set keySet()
+    590:590:public android.os.Bundle getBundle()
+    631:638:public java.lang.Object getMediaMetadata()
+android.support.v4.media.MediaMetadataCompat$BitmapKey
+android.support.v4.media.MediaMetadataCompat$Builder
+android.support.v4.media.MediaMetadataCompat$LongKey
+android.support.v4.media.MediaMetadataCompat$RatingKey
+android.support.v4.media.MediaMetadataCompat$TextKey
+android.support.v4.media.MediaMetadataCompatApi21:
+    31:31:public static java.util.Set keySet(java.lang.Object)
+    35:35:public static android.graphics.Bitmap getBitmap(java.lang.Object,java.lang.String)
+    39:39:public static long getLong(java.lang.Object,java.lang.String)
+    43:43:public static java.lang.Object getRating(java.lang.Object,java.lang.String)
+    47:47:public static java.lang.CharSequence getText(java.lang.Object,java.lang.String)
+    55:55:public static java.lang.Object createFromParcel(android.os.Parcel)
+    91:92:private MediaMetadataCompatApi21()
+android.support.v4.media.MediaMetadataCompatApi21$Builder
+android.support.v4.media.ParceledListSliceAdapterApi21
+android.support.v4.media.RatingCompat:
+    private static final java.lang.String TAG
+    public static final int RATING_NONE
+    public static final int RATING_HEART
+    public static final int RATING_THUMB_UP_DOWN
+    public static final int RATING_3_STARS
+    public static final int RATING_4_STARS
+    public static final int RATING_5_STARS
+    public static final int RATING_PERCENTAGE
+    private static final float RATING_NOT_RATED
+    private java.lang.Object mRatingObj
+    156:165:public static android.support.v4.media.RatingCompat newUnratedRating(int)
+    177:177:public static android.support.v4.media.RatingCompat newHeartRating(boolean)
+    188:188:public static android.support.v4.media.RatingCompat newThumbRating(boolean)
+    205:224:public static android.support.v4.media.RatingCompat newStarRating(int,float)
+    235:239:public static android.support.v4.media.RatingCompat newPercentageRating(float)
+    248:248:public boolean isRated()
+    259:259:public int getRatingStyle()
+    268:271:public boolean hasHeart()
+    281:284:public boolean isThumbUp()
+    294:303:public float getStarRating()
+    313:316:public float getPercentRating()
+    330:360:public static android.support.v4.media.RatingCompat fromRating(java.lang.Object)
+    373:398:public java.lang.Object getRating()
+android.support.v4.media.RatingCompat$StarStyle
+android.support.v4.media.RatingCompat$Style
+android.support.v4.media.session.IMediaControllerCallback$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onEvent
+    static final int TRANSACTION_onSessionDestroyed
+    static final int TRANSACTION_onPlaybackStateChanged
+    static final int TRANSACTION_onMetadataChanged
+    static final int TRANSACTION_onQueueChanged
+    static final int TRANSACTION_onQueueTitleChanged
+    static final int TRANSACTION_onExtrasChanged
+    static final int TRANSACTION_onVolumeInfoChanged
+    static final int TRANSACTION_onRepeatModeChanged
+    static final int TRANSACTION_onShuffleModeChangedRemoved
+    static final int TRANSACTION_onCaptioningEnabledChanged
+    static final int TRANSACTION_onShuffleModeChanged
+    static final int TRANSACTION_onSessionReady
+android.support.v4.media.session.IMediaControllerCallback$Stub$Proxy:
+    198:198:public java.lang.String getInterfaceDescriptor()
+android.support.v4.media.session.IMediaSession$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_sendCommand
+    static final int TRANSACTION_sendMediaButton
+    static final int TRANSACTION_registerCallbackListener
+    static final int TRANSACTION_unregisterCallbackListener
+    static final int TRANSACTION_isTransportControlEnabled
+    static final int TRANSACTION_getPackageName
+    static final int TRANSACTION_getTag
+    static final int TRANSACTION_getLaunchPendingIntent
+    static final int TRANSACTION_getFlags
+    static final int TRANSACTION_getVolumeAttributes
+    static final int TRANSACTION_adjustVolume
+    static final int TRANSACTION_setVolumeTo
+    static final int TRANSACTION_getMetadata
+    static final int TRANSACTION_getPlaybackState
+    static final int TRANSACTION_getQueue
+    static final int TRANSACTION_getQueueTitle
+    static final int TRANSACTION_getExtras
+    static final int TRANSACTION_getRatingType
+    static final int TRANSACTION_isCaptioningEnabled
+    static final int TRANSACTION_getRepeatMode
+    static final int TRANSACTION_isShuffleModeEnabledRemoved
+    static final int TRANSACTION_getShuffleMode
+    static final int TRANSACTION_addQueueItem
+    static final int TRANSACTION_addQueueItemAt
+    static final int TRANSACTION_removeQueueItem
+    static final int TRANSACTION_removeQueueItemAt
+    static final int TRANSACTION_prepare
+    static final int TRANSACTION_prepareFromMediaId
+    static final int TRANSACTION_prepareFromSearch
+    static final int TRANSACTION_prepareFromUri
+    static final int TRANSACTION_play
+    static final int TRANSACTION_playFromMediaId
+    static final int TRANSACTION_playFromSearch
+    static final int TRANSACTION_playFromUri
+    static final int TRANSACTION_skipToQueueItem
+    static final int TRANSACTION_pause
+    static final int TRANSACTION_stop
+    static final int TRANSACTION_next
+    static final int TRANSACTION_previous
+    static final int TRANSACTION_fastForward
+    static final int TRANSACTION_rewind
+    static final int TRANSACTION_seekTo
+    static final int TRANSACTION_rate
+    static final int TRANSACTION_rateWithExtras
+    static final int TRANSACTION_setCaptioningEnabled
+    static final int TRANSACTION_setRepeatMode
+    static final int TRANSACTION_setShuffleModeEnabledRemoved
+    static final int TRANSACTION_setShuffleMode
+    static final int TRANSACTION_sendCustomAction
+    18:20:public IMediaSession$Stub()
+android.support.v4.media.session.IMediaSession$Stub$Proxy:
+    631:631:public java.lang.String getInterfaceDescriptor()
+android.support.v4.media.session.MediaControllerCompat:
+    static final java.lang.String TAG
+    public static final java.lang.String COMMAND_GET_EXTRA_BINDER
+    public static final java.lang.String COMMAND_ADD_QUEUE_ITEM
+    public static final java.lang.String COMMAND_ADD_QUEUE_ITEM_AT
+    public static final java.lang.String COMMAND_REMOVE_QUEUE_ITEM
+    public static final java.lang.String COMMAND_REMOVE_QUEUE_ITEM_AT
+    public static final java.lang.String COMMAND_ARGUMENT_MEDIA_DESCRIPTION
+    public static final java.lang.String COMMAND_ARGUMENT_INDEX
+    private final android.support.v4.media.session.MediaControllerCompat$MediaControllerImpl mImpl
+    private final android.support.v4.media.session.MediaSessionCompat$Token mToken
+    private final java.util.HashSet mRegisteredCallbacks
+    167:179:public static void setMediaController(android.app.Activity,android.support.v4.media.session.MediaControllerCompat)
+    193:210:public static android.support.v4.media.session.MediaControllerCompat getMediaController(android.app.Activity)
+    215:229:static void validateCustomAction(java.lang.String,android.os.Bundle)
+    235:263:public MediaControllerCompat(android.content.Context,android.support.v4.media.session.MediaSessionCompat)
+    235:288:public MediaControllerCompat(android.content.Context,android.support.v4.media.session.MediaSessionCompat$Token)
+    296:296:public android.support.v4.media.session.MediaControllerCompat$TransportControls getTransportControls()
+    307:310:public boolean dispatchMediaButtonEvent(android.view.KeyEvent)
+    324:324:public android.support.v4.media.session.PlaybackStateCompat getPlaybackState()
+    333:333:public android.support.v4.media.MediaMetadataCompat getMetadata()
+    343:343:public java.util.List getQueue()
+    359:360:public void addQueueItem(android.support.v4.media.MediaDescriptionCompat)
+    379:380:public void addQueueItem(android.support.v4.media.MediaDescriptionCompat,int)
+    396:397:public void removeQueueItem(android.support.v4.media.MediaDescriptionCompat)
+    413:420:public void removeQueueItemAt(int)
+    426:426:public java.lang.CharSequence getQueueTitle()
+    433:433:public android.os.Bundle getExtras()
+    455:455:public int getRatingType()
+    468:468:public boolean isCaptioningEnabled()
+    481:481:public int getRepeatMode()
+    494:494:public int getShuffleMode()
+    504:504:public long getFlags()
+    513:513:public android.support.v4.media.session.MediaControllerCompat$PlaybackInfo getPlaybackInfo()
+    523:523:public android.app.PendingIntent getSessionActivity()
+    532:532:public android.support.v4.media.session.MediaSessionCompat$Token getSessionToken()
+    543:543:public android.os.Bundle getSessionToken2Bundle()
+    558:559:public void setVolumeTo(int,int)
+    575:576:public void adjustVolume(int,int)
+    585:586:public void registerCallback(android.support.v4.media.session.MediaControllerCompat$Callback)
+    597:606:public void registerCallback(android.support.v4.media.session.MediaControllerCompat$Callback,android.os.Handler)
+    615:624:public void unregisterCallback(android.support.v4.media.session.MediaControllerCompat$Callback)
+    636:640:public void sendCommand(java.lang.String,android.os.Bundle,android.os.ResultReceiver)
+    658:658:public boolean isSessionReady()
+    667:667:public java.lang.String getPackageName()
+    681:681:public java.lang.Object getMediaController()
+android.support.v4.media.session.MediaControllerCompat$Callback:
+    818:818:public android.support.v4.media.session.IMediaControllerCallback getIControllerCallback()
+    823:824:public void binderDied()
+    830:840:void setHandler(android.os.Handler)
+android.support.v4.media.session.MediaControllerCompat$Callback$MessageHandler:
+    private static final int MSG_EVENT
+    private static final int MSG_UPDATE_PLAYBACK_STATE
+    private static final int MSG_UPDATE_METADATA
+    private static final int MSG_UPDATE_VOLUME
+    private static final int MSG_UPDATE_QUEUE
+    private static final int MSG_UPDATE_QUEUE_TITLE
+    private static final int MSG_UPDATE_EXTRAS
+    private static final int MSG_DESTROYED
+    private static final int MSG_UPDATE_REPEAT_MODE
+    private static final int MSG_UPDATE_CAPTIONING_ENABLED
+    private static final int MSG_UPDATE_SHUFFLE_MODE
+    private static final int MSG_SESSION_READY
+    1065:1069:MediaControllerCompat$Callback$MessageHandler(android.support.v4.media.session.MediaControllerCompat$Callback,android.os.Looper)
+android.support.v4.media.session.MediaControllerCompat$MediaControllerExtraData
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImpl
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21:
+    protected final java.lang.Object mControllerObj
+    1951:1969:public MediaControllerCompat$MediaControllerImplApi21(android.content.Context,android.support.v4.media.session.MediaSessionCompat$Token)
+    1973:1992:public final void registerCallback(android.support.v4.media.session.MediaControllerCompat$Callback,android.os.Handler)
+    1996:2013:public final void unregisterCallback(android.support.v4.media.session.MediaControllerCompat$Callback)
+    2017:2017:public boolean dispatchMediaButtonEvent(android.view.KeyEvent)
+    2022:2023:public android.support.v4.media.session.MediaControllerCompat$TransportControls getTransportControls()
+    2028:2036:public android.support.v4.media.session.PlaybackStateCompat getPlaybackState()
+    2041:2042:public android.support.v4.media.MediaMetadataCompat getMetadata()
+    2047:2048:public java.util.List getQueue()
+    2053:2061:public void addQueueItem(android.support.v4.media.MediaDescriptionCompat)
+    2065:2074:public void addQueueItem(android.support.v4.media.MediaDescriptionCompat,int)
+    2078:2086:public void removeQueueItem(android.support.v4.media.MediaDescriptionCompat)
+    2090:2090:public java.lang.CharSequence getQueueTitle()
+    2095:2095:public android.os.Bundle getExtras()
+    2100:2107:public int getRatingType()
+    2112:2119:public boolean isCaptioningEnabled()
+    2124:2131:public int getRepeatMode()
+    2136:2143:public int getShuffleMode()
+    2148:2148:public long getFlags()
+    2153:2159:public android.support.v4.media.session.MediaControllerCompat$PlaybackInfo getPlaybackInfo()
+    2164:2164:public android.app.PendingIntent getSessionActivity()
+    2169:2170:public void setVolumeTo(int,int)
+    2174:2175:public void adjustVolume(int,int)
+    2179:2180:public void sendCommand(java.lang.String,android.os.Bundle,android.os.ResultReceiver)
+    2184:2184:public boolean isSessionReady()
+    2189:2189:public java.lang.String getPackageName()
+    2194:2194:public java.lang.Object getMediaController()
+    2198:2199:private void requestExtraBinder()
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver:
+    2225:2227:MediaControllerCompat$MediaControllerImplApi21$ExtraBinderRequestResultReceiver(android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21)
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi23
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi24
+android.support.v4.media.session.MediaControllerCompat$MediaControllerImplBase
+android.support.v4.media.session.MediaControllerCompat$PlaybackInfo:
+    public static final int PLAYBACK_TYPE_LOCAL
+    public static final int PLAYBACK_TYPE_REMOTE
+    1381:1381:public int getPlaybackType()
+    1393:1393:public int getAudioStream()
+    1408:1408:public int getVolumeControl()
+    1417:1417:public int getMaxVolume()
+    1426:1426:public int getCurrentVolume()
+android.support.v4.media.session.MediaControllerCompat$TransportControls
+android.support.v4.media.session.MediaControllerCompat$TransportControlsApi21
+android.support.v4.media.session.MediaControllerCompat$TransportControlsApi23
+android.support.v4.media.session.MediaControllerCompat$TransportControlsApi24
+android.support.v4.media.session.MediaControllerCompat$TransportControlsBase
+android.support.v4.media.session.MediaControllerCompatApi21:
+    42:42:public static java.lang.Object fromToken(android.content.Context,java.lang.Object)
+    50:52:public static void registerCallback(java.lang.Object,java.lang.Object,android.os.Handler)
+    55:57:public static void unregisterCallback(java.lang.Object,java.lang.Object)
+    60:61:public static void setMediaController(android.app.Activity,java.lang.Object)
+    64:64:public static java.lang.Object getMediaController(android.app.Activity)
+    68:68:public static java.lang.Object getSessionToken(java.lang.Object)
+    72:72:public static java.lang.Object getTransportControls(java.lang.Object)
+    76:76:public static java.lang.Object getPlaybackState(java.lang.Object)
+    80:80:public static java.lang.Object getMetadata(java.lang.Object)
+    84:89:public static java.util.List getQueue(java.lang.Object)
+    93:93:public static java.lang.CharSequence getQueueTitle(java.lang.Object)
+    97:97:public static android.os.Bundle getExtras(java.lang.Object)
+    101:101:public static int getRatingType(java.lang.Object)
+    105:105:public static long getFlags(java.lang.Object)
+    109:109:public static java.lang.Object getPlaybackInfo(java.lang.Object)
+    113:113:public static android.app.PendingIntent getSessionActivity(java.lang.Object)
+    117:117:public static boolean dispatchMediaButtonEvent(java.lang.Object,android.view.KeyEvent)
+    121:122:public static void setVolumeTo(java.lang.Object,int,int)
+    125:126:public static void adjustVolume(java.lang.Object,int,int)
+    130:131:public static void sendCommand(java.lang.Object,java.lang.String,android.os.Bundle,android.os.ResultReceiver)
+    134:134:public static java.lang.String getPackageName(java.lang.Object)
+    332:333:private MediaControllerCompatApi21()
+android.support.v4.media.session.MediaControllerCompatApi21$PlaybackInfo:
+    private static final int FLAG_SCO
+    private static final int STREAM_BLUETOOTH_SCO
+    private static final int STREAM_SYSTEM_ENFORCED
+    196:196:public static int getPlaybackType(java.lang.Object)
+    209:209:public static int getVolumeControl(java.lang.Object)
+    213:213:public static int getMaxVolume(java.lang.Object)
+    217:217:public static int getCurrentVolume(java.lang.Object)
+    265:266:private MediaControllerCompatApi21$PlaybackInfo()
+android.support.v4.media.session.MediaControllerCompatApi21$TransportControls
+android.support.v4.media.session.MediaControllerCompatApi23
+android.support.v4.media.session.MediaControllerCompatApi23$TransportControls
+android.support.v4.media.session.MediaControllerCompatApi24
+android.support.v4.media.session.MediaControllerCompatApi24$TransportControls
+android.support.v4.media.session.MediaSessionCompat:
+    static final java.lang.String TAG
+    private final android.support.v4.media.session.MediaSessionCompat$MediaSessionImpl mImpl
+    private final android.support.v4.media.session.MediaControllerCompat mController
+    private final java.util.ArrayList mActiveListeners
+    public static final int FLAG_HANDLES_MEDIA_BUTTONS
+    public static final int FLAG_HANDLES_TRANSPORT_CONTROLS
+    public static final int FLAG_HANDLES_QUEUE_COMMANDS
+    public static final java.lang.String ACTION_FLAG_AS_INAPPROPRIATE
+    public static final java.lang.String ACTION_SKIP_AD
+    public static final java.lang.String ACTION_FOLLOW
+    public static final java.lang.String ACTION_UNFOLLOW
+    public static final java.lang.String ARGUMENT_MEDIA_ATTRIBUTE
+    public static final java.lang.String ARGUMENT_MEDIA_ATTRIBUTE_VALUE
+    public static final int MEDIA_ATTRIBUTE_ARTIST
+    public static final int MEDIA_ATTRIBUTE_ALBUM
+    public static final int MEDIA_ATTRIBUTE_PLAYLIST
+    public static final java.lang.String ACTION_PLAY_FROM_URI
+    public static final java.lang.String ACTION_PREPARE
+    public static final java.lang.String ACTION_PREPARE_FROM_MEDIA_ID
+    public static final java.lang.String ACTION_PREPARE_FROM_SEARCH
+    public static final java.lang.String ACTION_PREPARE_FROM_URI
+    public static final java.lang.String ACTION_SET_CAPTIONING_ENABLED
+    public static final java.lang.String ACTION_SET_REPEAT_MODE
+    public static final java.lang.String ACTION_SET_SHUFFLE_MODE
+    public static final java.lang.String ACTION_SET_RATING
+    public static final java.lang.String ACTION_ARGUMENT_MEDIA_ID
+    public static final java.lang.String ACTION_ARGUMENT_QUERY
+    public static final java.lang.String ACTION_ARGUMENT_URI
+    public static final java.lang.String ACTION_ARGUMENT_RATING
+    public static final java.lang.String ACTION_ARGUMENT_EXTRAS
+    public static final java.lang.String ACTION_ARGUMENT_CAPTIONING_ENABLED
+    public static final java.lang.String ACTION_ARGUMENT_REPEAT_MODE
+    public static final java.lang.String ACTION_ARGUMENT_SHUFFLE_MODE
+    public static final java.lang.String KEY_TOKEN
+    public static final java.lang.String KEY_EXTRA_BINDER
+    public static final java.lang.String KEY_SESSION_TOKEN2_BUNDLE
+    private static final int MAX_BITMAP_SIZE_IN_DP
+    private static final java.lang.String DATA_CALLING_PACKAGE
+    private static final java.lang.String DATA_CALLING_PID
+    private static final java.lang.String DATA_CALLING_UID
+    private static final java.lang.String DATA_EXTRAS
+    static int sMaxBitmapSize
+    430:431:public MediaSessionCompat(android.content.Context,java.lang.String)
+    456:457:public MediaSessionCompat(android.content.Context,java.lang.String,android.content.ComponentName,android.app.PendingIntent)
+    465:466:public MediaSessionCompat(android.content.Context,java.lang.String,android.os.Bundle)
+    114:515:private MediaSessionCompat(android.content.Context,java.lang.String,android.content.ComponentName,android.app.PendingIntent,android.os.Bundle)
+    114:525:private MediaSessionCompat(android.content.Context,android.support.v4.media.session.MediaSessionCompat$MediaSessionImpl)
+    535:536:public void setCallback(android.support.v4.media.session.MediaSessionCompat$Callback)
+    547:552:public void setCallback(android.support.v4.media.session.MediaSessionCompat$Callback,android.os.Handler)
+    563:564:public void setSessionActivity(android.app.PendingIntent)
+    580:581:public void setMediaButtonReceiver(android.app.PendingIntent)
+    589:590:public void setFlags(int)
+    603:604:public void setPlaybackToLocal(int)
+    622:626:public void setPlaybackToRemote(androidx.media.VolumeProviderCompat)
+    642:646:public void setActive(boolean)
+    654:654:public boolean isActive()
+    666:670:public void sendSessionEvent(java.lang.String,android.os.Bundle)
+    678:679:public void release()
+    696:696:public android.support.v4.media.session.MediaSessionCompat$Token getSessionToken()
+    706:706:public android.support.v4.media.session.MediaControllerCompat getController()
+    715:716:public void setPlaybackState(android.support.v4.media.session.PlaybackStateCompat)
+    727:728:public void setMetadata(android.support.v4.media.MediaMetadataCompat)
+    742:743:public void setQueue(java.util.List)
+    753:754:public void setQueueTitle(java.lang.CharSequence)
+    770:771:public void setRatingType(int)
+    779:780:public void setCaptioningEnabled(boolean)
+    795:796:public void setRepeatMode(int)
+    810:811:public void setShuffleMode(int)
+    822:823:public void setExtras(android.os.Bundle)
+    836:836:public java.lang.Object getMediaSession()
+    850:850:public java.lang.Object getRemoteControlClient()
+    862:862:public final androidx.media.MediaSessionManager$RemoteUserInfo getCurrentControllerInfo()
+    874:874:public java.lang.String getCallingPackage()
+    885:889:public void addOnActiveChangeListener(android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener)
+    898:902:public void removeOnActiveChangeListener(android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener)
+    915:918:public static android.support.v4.media.session.MediaSessionCompat fromMediaSession(android.content.Context,java.lang.Object)
+    936:964:static android.support.v4.media.session.PlaybackStateCompat getStateWithUpdatedPosition(android.support.v4.media.session.PlaybackStateCompat,android.support.v4.media.MediaMetadataCompat)
+android.support.v4.media.session.MediaSessionCompat$1
+android.support.v4.media.session.MediaSessionCompat$2
+android.support.v4.media.session.MediaSessionCompat$3
+android.support.v4.media.session.MediaSessionCompat$Callback
+android.support.v4.media.session.MediaSessionCompat$Callback$CallbackHandler
+android.support.v4.media.session.MediaSessionCompat$Callback$StubApi21
+android.support.v4.media.session.MediaSessionCompat$Callback$StubApi23
+android.support.v4.media.session.MediaSessionCompat$Callback$StubApi24
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImpl
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi18
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi18$1
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi19
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi19$1
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi21
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi21$ExtraSession
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi28
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$1
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$Command
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$MediaSessionStub
+android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$MessageHandler
+android.support.v4.media.session.MediaSessionCompat$OnActiveChangeListener
+android.support.v4.media.session.MediaSessionCompat$QueueItem:
+    public static final int UNKNOWN_ID
+    1769:1770:public MediaSessionCompat$QueueItem(android.support.v4.media.MediaDescriptionCompat,long)
+    1793:1793:public android.support.v4.media.MediaDescriptionCompat getDescription()
+    1800:1800:public long getQueueId()
+    1825:1830:public java.lang.Object getQueueItem()
+android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper:
+    1908:1910:public MediaSessionCompat$ResultReceiverWrapper(android.os.ResultReceiver)
+android.support.v4.media.session.MediaSessionCompat$SessionFlags
+android.support.v4.media.session.MediaSessionCompat$Token:
+    1560:1561:MediaSessionCompat$Token(java.lang.Object,android.support.v4.media.session.IMediaSession)
+    1581:1581:public static android.support.v4.media.session.MediaSessionCompat$Token fromToken(java.lang.Object)
+    1599:1602:public static android.support.v4.media.session.MediaSessionCompat$Token fromToken(java.lang.Object,android.support.v4.media.session.IMediaSession)
+    1656:1656:public java.lang.Object getToken()
+    1680:1680:public android.os.Bundle getSessionToken2Bundle()
+    1696:1704:public android.os.Bundle toBundle()
+    1716:1723:public static android.support.v4.media.session.MediaSessionCompat$Token fromBundle(android.os.Bundle)
+android.support.v4.media.session.MediaSessionCompatApi21:
+    static final java.lang.String TAG
+    46:46:public static java.lang.Object createSession(android.content.Context,java.lang.String)
+    50:53:public static java.lang.Object verifySession(java.lang.Object)
+    57:60:public static java.lang.Object verifyToken(java.lang.Object)
+    64:64:public static java.lang.Object createCallback(android.support.v4.media.session.MediaSessionCompatApi21$Callback)
+    68:69:public static void setCallback(java.lang.Object,java.lang.Object,android.os.Handler)
+    72:73:public static void setFlags(java.lang.Object,int)
+    77:80:public static void setPlaybackToLocal(java.lang.Object,int)
+    83:84:public static void setPlaybackToRemote(java.lang.Object,java.lang.Object)
+    87:88:public static void setActive(java.lang.Object,boolean)
+    91:91:public static boolean isActive(java.lang.Object)
+    95:96:public static void sendSessionEvent(java.lang.Object,java.lang.String,android.os.Bundle)
+    99:100:public static void release(java.lang.Object)
+    103:103:public static android.os.Parcelable getSessionToken(java.lang.Object)
+    107:108:public static void setPlaybackState(java.lang.Object,java.lang.Object)
+    111:112:public static void setMetadata(java.lang.Object,java.lang.Object)
+    115:116:public static void setSessionActivity(java.lang.Object,android.app.PendingIntent)
+    119:120:public static void setMediaButtonReceiver(java.lang.Object,android.app.PendingIntent)
+    123:132:public static void setQueue(java.lang.Object,java.util.List)
+    135:136:public static void setQueueTitle(java.lang.Object,java.lang.CharSequence)
+    139:140:public static void setExtras(java.lang.Object,android.os.Bundle)
+    143:153:public static boolean hasCallback(java.lang.Object)
+    281:282:private MediaSessionCompatApi21()
+android.support.v4.media.session.MediaSessionCompatApi21$Callback
+android.support.v4.media.session.MediaSessionCompatApi21$CallbackProxy
+android.support.v4.media.session.MediaSessionCompatApi21$QueueItem:
+    266:266:public static java.lang.Object createItem(java.lang.Object,long)
+    277:278:private MediaSessionCompatApi21$QueueItem()
+android.support.v4.media.session.MediaSessionCompatApi22
+android.support.v4.media.session.MediaSessionCompatApi23
+android.support.v4.media.session.MediaSessionCompatApi23$Callback
+android.support.v4.media.session.MediaSessionCompatApi23$CallbackProxy
+android.support.v4.media.session.MediaSessionCompatApi24
+android.support.v4.media.session.MediaSessionCompatApi24$Callback
+android.support.v4.media.session.MediaSessionCompatApi24$CallbackProxy
+android.support.v4.media.session.ParcelableVolumeInfo:
+    34:40:public ParcelableVolumeInfo(int,int,int,int,int)
+android.support.v4.media.session.PlaybackStateCompat:
+    public static final long ACTION_STOP
+    public static final long ACTION_PAUSE
+    public static final long ACTION_PLAY
+    public static final long ACTION_REWIND
+    public static final long ACTION_SKIP_TO_PREVIOUS
+    public static final long ACTION_SKIP_TO_NEXT
+    public static final long ACTION_FAST_FORWARD
+    public static final long ACTION_SET_RATING
+    public static final long ACTION_SEEK_TO
+    public static final long ACTION_PLAY_PAUSE
+    public static final long ACTION_PLAY_FROM_MEDIA_ID
+    public static final long ACTION_PLAY_FROM_SEARCH
+    public static final long ACTION_SKIP_TO_QUEUE_ITEM
+    public static final long ACTION_PLAY_FROM_URI
+    public static final long ACTION_PREPARE
+    public static final long ACTION_PREPARE_FROM_MEDIA_ID
+    public static final long ACTION_PREPARE_FROM_SEARCH
+    public static final long ACTION_PREPARE_FROM_URI
+    public static final long ACTION_SET_REPEAT_MODE
+    public static final long ACTION_SET_SHUFFLE_MODE_ENABLED
+    public static final long ACTION_SET_CAPTIONING_ENABLED
+    public static final long ACTION_SET_SHUFFLE_MODE
+    public static final int STATE_NONE
+    public static final int STATE_STOPPED
+    public static final int STATE_PAUSED
+    public static final int STATE_PLAYING
+    public static final int STATE_FAST_FORWARDING
+    public static final int STATE_REWINDING
+    public static final int STATE_BUFFERING
+    public static final int STATE_ERROR
+    public static final int STATE_CONNECTING
+    public static final int STATE_SKIPPING_TO_PREVIOUS
+    public static final int STATE_SKIPPING_TO_NEXT
+    public static final int STATE_SKIPPING_TO_QUEUE_ITEM
+    public static final long PLAYBACK_POSITION_UNKNOWN
+    public static final int REPEAT_MODE_INVALID
+    public static final int REPEAT_MODE_NONE
+    public static final int REPEAT_MODE_ONE
+    public static final int REPEAT_MODE_ALL
+    public static final int REPEAT_MODE_GROUP
+    public static final int SHUFFLE_MODE_INVALID
+    public static final int SHUFFLE_MODE_NONE
+    public static final int SHUFFLE_MODE_ALL
+    public static final int SHUFFLE_MODE_GROUP
+    public static final int ERROR_CODE_UNKNOWN_ERROR
+    public static final int ERROR_CODE_APP_ERROR
+    public static final int ERROR_CODE_NOT_SUPPORTED
+    public static final int ERROR_CODE_AUTHENTICATION_EXPIRED
+    public static final int ERROR_CODE_PREMIUM_ACCOUNT_REQUIRED
+    public static final int ERROR_CODE_CONCURRENT_STREAM_LIMIT
+    public static final int ERROR_CODE_PARENTAL_CONTROL_RESTRICTED
+    public static final int ERROR_CODE_NOT_AVAILABLE_IN_REGION
+    public static final int ERROR_CODE_CONTENT_ALREADY_PLAYING
+    public static final int ERROR_CODE_SKIP_LIMIT_REACHED
+    public static final int ERROR_CODE_ACTION_ABORTED
+    public static final int ERROR_CODE_END_OF_QUEUE
+    private static final int KEYCODE_MEDIA_PAUSE
+    private static final int KEYCODE_MEDIA_PLAY
+    519:536:public static int toKeyCode(long)
+    641:641:public int getState()
+    648:648:public long getPosition()
+    658:658:public long getLastPositionUpdateTime()
+    670:672:public long getCurrentPosition(java.lang.Long)
+    681:681:public long getBufferedPosition()
+    692:692:public float getPlaybackSpeed()
+    724:724:public long getActions()
+    731:731:public java.util.List getCustomActions()
+    754:754:public int getErrorCode()
+    764:764:public java.lang.CharSequence getErrorMessage()
+    776:776:public long getActiveQueueItemId()
+    785:785:public android.os.Bundle getExtras()
+    841:861:public java.lang.Object getPlaybackState()
+android.support.v4.media.session.PlaybackStateCompat$Actions
+android.support.v4.media.session.PlaybackStateCompat$Builder
+android.support.v4.media.session.PlaybackStateCompat$CustomAction:
+    956:962:public java.lang.Object getCustomAction()
+    985:985:public java.lang.String getAction()
+    994:994:public java.lang.CharSequence getName()
+    1005:1005:public int getIcon()
+    1017:1017:public android.os.Bundle getExtras()
+android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder
+android.support.v4.media.session.PlaybackStateCompat$ErrorCode
+android.support.v4.media.session.PlaybackStateCompat$MediaKeyAction
+android.support.v4.media.session.PlaybackStateCompat$RepeatMode
+android.support.v4.media.session.PlaybackStateCompat$ShuffleMode
+android.support.v4.media.session.PlaybackStateCompat$State
+android.support.v4.media.session.PlaybackStateCompatApi21:
+    68:77:public static java.lang.Object newInstance(int,long,long,float,long,java.lang.CharSequence,long,java.util.List,long)
+    108:109:private PlaybackStateCompatApi21()
+android.support.v4.media.session.PlaybackStateCompatApi21$CustomAction:
+    98:101:public static java.lang.Object newInstance(java.lang.String,java.lang.CharSequence,int,android.os.Bundle)
+    104:105:private PlaybackStateCompatApi21$CustomAction()
+android.support.v4.media.session.PlaybackStateCompatApi22:
+    36:46:public static java.lang.Object newInstance(int,long,long,float,long,java.lang.CharSequence,long,java.util.List,long,android.os.Bundle)
+    49:50:private PlaybackStateCompatApi22()
+android.support.v4.os.IResultReceiver$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_send
+android.support.v4.os.IResultReceiver$Stub$Proxy:
+    77:77:public java.lang.String getInterfaceDescriptor()
+android.support.v4.os.ResultReceiver:
+    81:84:public ResultReceiver(android.os.Handler)
+    94:109:public void send(int,android.os.Bundle)
+androidx.annotation.AnimRes
+androidx.annotation.AnimatorRes
+androidx.annotation.AnyRes
+androidx.annotation.AnyThread
+androidx.annotation.ArrayRes
+androidx.annotation.AttrRes
+androidx.annotation.BinderThread
+androidx.annotation.BoolRes
+androidx.annotation.CallSuper
+androidx.annotation.CheckResult
+androidx.annotation.ColorInt
+androidx.annotation.ColorLong
+androidx.annotation.ColorRes
+androidx.annotation.DimenRes
+androidx.annotation.Dimension
+androidx.annotation.DrawableRes
+androidx.annotation.FloatRange
+androidx.annotation.FontRes
+androidx.annotation.FractionRes
+androidx.annotation.GuardedBy
+androidx.annotation.HalfFloat
+androidx.annotation.IdRes
+androidx.annotation.IntDef
+androidx.annotation.IntRange
+androidx.annotation.IntegerRes
+androidx.annotation.InterpolatorRes
+androidx.annotation.Keep
+androidx.annotation.LayoutRes
+androidx.annotation.LongDef
+androidx.annotation.MainThread
+androidx.annotation.MenuRes
+androidx.annotation.NavigationRes
+androidx.annotation.NonNull
+androidx.annotation.Nullable
+androidx.annotation.PluralsRes
+androidx.annotation.Px
+androidx.annotation.RawRes
+androidx.annotation.RequiresApi
+androidx.annotation.RequiresFeature
+androidx.annotation.RequiresPermission
+androidx.annotation.RequiresPermission$Read
+androidx.annotation.RequiresPermission$Write
+androidx.annotation.RestrictTo
+androidx.annotation.RestrictTo$Scope
+androidx.annotation.Size
+androidx.annotation.StringDef
+androidx.annotation.StringRes
+androidx.annotation.StyleRes
+androidx.annotation.StyleableRes
+androidx.annotation.TransitionRes
+androidx.annotation.UiThread
+androidx.annotation.VisibleForTesting
+androidx.annotation.WorkerThread
+androidx.annotation.XmlRes
+androidx.arch.core.R
+androidx.arch.core.executor.ArchTaskExecutor
+androidx.arch.core.executor.ArchTaskExecutor$1
+androidx.arch.core.executor.ArchTaskExecutor$2
+androidx.arch.core.executor.DefaultTaskExecutor
+androidx.arch.core.executor.DefaultTaskExecutor$1
+androidx.arch.core.executor.TaskExecutor
+androidx.arch.core.internal.FastSafeIterableMap
+androidx.arch.core.internal.SafeIterableMap
+androidx.arch.core.internal.SafeIterableMap$AscendingIterator
+androidx.arch.core.internal.SafeIterableMap$DescendingIterator
+androidx.arch.core.internal.SafeIterableMap$Entry
+androidx.arch.core.internal.SafeIterableMap$IteratorWithAdditions
+androidx.arch.core.internal.SafeIterableMap$ListIterator
+androidx.arch.core.internal.SafeIterableMap$SupportRemove
+androidx.arch.core.util.Function
+androidx.asynclayoutinflater.R
+androidx.asynclayoutinflater.R$attr
+androidx.asynclayoutinflater.R$color
+androidx.asynclayoutinflater.R$dimen
+androidx.asynclayoutinflater.R$drawable
+androidx.asynclayoutinflater.R$id
+androidx.asynclayoutinflater.R$integer
+androidx.asynclayoutinflater.R$layout
+androidx.asynclayoutinflater.R$string
+androidx.asynclayoutinflater.R$style
+androidx.asynclayoutinflater.R$styleable
+androidx.asynclayoutinflater.view.AsyncLayoutInflater
+androidx.asynclayoutinflater.view.AsyncLayoutInflater$1
+androidx.asynclayoutinflater.view.AsyncLayoutInflater$BasicInflater
+androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateRequest
+androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateThread
+androidx.asynclayoutinflater.view.AsyncLayoutInflater$OnInflateFinishedListener
+androidx.collection.ArrayMap:
+    64:65:public ArrayMap(int)
+    71:72:public ArrayMap(androidx.collection.SimpleArrayMap)
+    133:133:public boolean containsAll(java.util.Collection)
+    154:154:public boolean removeAll(java.util.Collection)
+    164:164:public boolean retainAll(java.util.Collection)
+androidx.collection.ArraySet
+androidx.collection.ArraySet$1
+androidx.collection.CircularArray
+androidx.collection.CircularIntArray
+androidx.collection.ContainerHelpers:
+    25:25:public static int idealIntArraySize(int)
+    29:29:public static int idealLongArraySize(int)
+    33:37:public static int idealByteArraySize(int)
+    65:80:static int binarySearch(long[],int,long)
+    83:84:private ContainerHelpers()
+androidx.collection.LongSparseArray
+androidx.collection.LruCache
+androidx.collection.SimpleArrayMap:
+    private static final boolean DEBUG
+    private static final java.lang.String TAG
+    private static final boolean CONCURRENT_MODIFICATION_EXCEPTIONS
+    private static final int BASE_SIZE
+    private static final int CACHE_SIZE
+    246:254:public SimpleArrayMap(int)
+    260:264:public SimpleArrayMap(androidx.collection.SimpleArrayMap)
+    481:494:public void putAll(androidx.collection.SimpleArrayMap)
+androidx.collection.SparseArrayCompat
+androidx.coordinatorlayout.R
+androidx.coordinatorlayout.R$attr
+androidx.coordinatorlayout.R$color
+androidx.coordinatorlayout.R$dimen
+androidx.coordinatorlayout.R$drawable
+androidx.coordinatorlayout.R$id
+androidx.coordinatorlayout.R$integer
+androidx.coordinatorlayout.R$layout
+androidx.coordinatorlayout.R$string
+androidx.coordinatorlayout.R$style
+androidx.coordinatorlayout.R$styleable
+androidx.coordinatorlayout.widget.CoordinatorLayout
+androidx.coordinatorlayout.widget.CoordinatorLayout$1
+androidx.coordinatorlayout.widget.CoordinatorLayout$AttachedBehavior
+androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior
+androidx.coordinatorlayout.widget.CoordinatorLayout$DefaultBehavior
+androidx.coordinatorlayout.widget.CoordinatorLayout$DispatchChangeEvent
+androidx.coordinatorlayout.widget.CoordinatorLayout$HierarchyChangeListener
+androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams
+androidx.coordinatorlayout.widget.CoordinatorLayout$OnPreDrawListener
+androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState
+androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState$1
+androidx.coordinatorlayout.widget.CoordinatorLayout$ViewElevationComparator
+androidx.coordinatorlayout.widget.DirectedAcyclicGraph
+androidx.coordinatorlayout.widget.ViewGroupUtils
+androidx.core.R
+androidx.core.R$attr
+androidx.core.R$color
+androidx.core.R$dimen
+androidx.core.R$drawable
+androidx.core.R$id
+androidx.core.R$integer
+androidx.core.R$layout
+androidx.core.R$string
+androidx.core.R$style
+androidx.core.R$styleable
+androidx.core.accessibilityservice.AccessibilityServiceInfoCompat
+androidx.core.app.ActivityCompat:
+    149:151:protected ActivityCompat()
+    161:162:public static void setPermissionCompatDelegate(androidx.core.app.ActivityCompat$PermissionCompatDelegate)
+    169:169:public static androidx.core.app.ActivityCompat$PermissionCompatDelegate getPermissionCompatDelegate()
+    207:208:public static boolean invalidateOptionsMenu(android.app.Activity)
+    233:238:public static void startActivityForResult(android.app.Activity,android.content.Intent,int,android.os.Bundle)
+    270:277:public static void startIntentSenderForResult(android.app.Activity,android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle)
+    287:292:public static void finishAffinity(android.app.Activity)
+    304:309:public static void finishAfterTransition(android.app.Activity)
+    329:341:public static android.net.Uri getReferrer(android.app.Activity)
+    362:370:public static android.view.View requireViewById(android.app.Activity,int)
+    383:389:public static void setEnterSharedElementCallback(android.app.Activity,androidx.core.app.SharedElementCallback)
+    402:408:public static void setExitSharedElementCallback(android.app.Activity,androidx.core.app.SharedElementCallback)
+    411:414:public static void postponeEnterTransition(android.app.Activity)
+    417:420:public static void startPostponedEnterTransition(android.app.Activity)
+    548:551:public static boolean shouldShowRequestPermissionRationale(android.app.Activity,java.lang.String)
+    565:565:public static androidx.core.view.DragAndDropPermissionsCompat requestDragAndDropPermissions(android.app.Activity,android.view.DragEvent)
+androidx.core.app.ActivityCompat$PermissionCompatDelegate:
+    public abstract boolean onActivityResult(android.app.Activity,int,int,android.content.Intent)
+androidx.core.app.ActivityCompat$SharedElementCallback21Impl
+androidx.core.app.ActivityCompat$SharedElementCallback21Impl$1
+androidx.core.app.ActivityManagerCompat
+androidx.core.app.ActivityOptionsCompat
+androidx.core.app.ActivityOptionsCompat$ActivityOptionsCompatImpl
+androidx.core.app.AlarmManagerCompat
+androidx.core.app.AppComponentFactory
+androidx.core.app.AppLaunchChecker
+androidx.core.app.AppOpsManagerCompat
+androidx.core.app.BundleCompat:
+    94:94:private BundleCompat()
+    121:126:public static void putBinder(android.os.Bundle,java.lang.String,android.os.IBinder)
+androidx.core.app.BundleCompat$BundleCompatBaseImpl:
+    private static final java.lang.String TAG
+    private static java.lang.reflect.Method sPutIBinderMethod
+    private static boolean sPutIBinderMethodFetched
+    44:45:private BundleCompat$BundleCompatBaseImpl()
+    71:91:public static void putBinder(android.os.Bundle,java.lang.String,android.os.IBinder)
+androidx.core.app.ComponentActivity
+androidx.core.app.ComponentActivity$ExtraData
+androidx.core.app.CoreComponentFactory:
+    private static final java.lang.String TAG
+androidx.core.app.FrameMetricsAggregator
+androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl
+androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl$1
+androidx.core.app.FrameMetricsAggregator$FrameMetricsBaseImpl
+androidx.core.app.FrameMetricsAggregator$MetricType
+androidx.core.app.JobIntentService
+androidx.core.app.JobIntentService$CommandProcessor
+androidx.core.app.JobIntentService$CompatJobEngine
+androidx.core.app.JobIntentService$CompatWorkEnqueuer
+androidx.core.app.JobIntentService$CompatWorkItem
+androidx.core.app.JobIntentService$GenericWorkItem
+androidx.core.app.JobIntentService$JobServiceEngineImpl
+androidx.core.app.JobIntentService$JobServiceEngineImpl$WrapperWorkItem
+androidx.core.app.JobIntentService$JobWorkEnqueuer
+androidx.core.app.JobIntentService$WorkEnqueuer
+androidx.core.app.NavUtils
+androidx.core.app.NotificationBuilderWithBuilderAccessor
+androidx.core.app.NotificationCompat
+androidx.core.app.NotificationCompat$Action
+androidx.core.app.NotificationCompat$Action$Builder
+androidx.core.app.NotificationCompat$Action$Extender
+androidx.core.app.NotificationCompat$Action$SemanticAction
+androidx.core.app.NotificationCompat$Action$WearableExtender
+androidx.core.app.NotificationCompat$BadgeIconType
+androidx.core.app.NotificationCompat$BigPictureStyle
+androidx.core.app.NotificationCompat$BigTextStyle
+androidx.core.app.NotificationCompat$Builder
+androidx.core.app.NotificationCompat$CarExtender
+androidx.core.app.NotificationCompat$CarExtender$UnreadConversation
+androidx.core.app.NotificationCompat$CarExtender$UnreadConversation$Builder
+androidx.core.app.NotificationCompat$DecoratedCustomViewStyle
+androidx.core.app.NotificationCompat$Extender
+androidx.core.app.NotificationCompat$GroupAlertBehavior
+androidx.core.app.NotificationCompat$InboxStyle
+androidx.core.app.NotificationCompat$MessagingStyle
+androidx.core.app.NotificationCompat$MessagingStyle$Message
+androidx.core.app.NotificationCompat$NotificationVisibility
+androidx.core.app.NotificationCompat$StreamType
+androidx.core.app.NotificationCompat$Style
+androidx.core.app.NotificationCompat$WearableExtender
+androidx.core.app.NotificationCompatBuilder
+androidx.core.app.NotificationCompatExtras
+androidx.core.app.NotificationCompatJellybean
+androidx.core.app.NotificationCompatSideChannelService
+androidx.core.app.NotificationCompatSideChannelService$NotificationSideChannelStub
+androidx.core.app.NotificationManagerCompat
+androidx.core.app.NotificationManagerCompat$CancelTask
+androidx.core.app.NotificationManagerCompat$NotifyTask
+androidx.core.app.NotificationManagerCompat$ServiceConnectedEvent
+androidx.core.app.NotificationManagerCompat$SideChannelManager
+androidx.core.app.NotificationManagerCompat$SideChannelManager$ListenerRecord
+androidx.core.app.NotificationManagerCompat$Task
+androidx.core.app.Person
+androidx.core.app.Person$Builder
+androidx.core.app.RemoteInput
+androidx.core.app.RemoteInput$Builder
+androidx.core.app.ServiceCompat
+androidx.core.app.ServiceCompat$StopForegroundFlags
+androidx.core.app.ShareCompat
+androidx.core.app.ShareCompat$IntentBuilder
+androidx.core.app.ShareCompat$IntentReader
+androidx.core.app.SharedElementCallback
+androidx.core.app.SharedElementCallback$OnSharedElementsReadyListener
+androidx.core.app.TaskStackBuilder
+androidx.core.app.TaskStackBuilder$SupportParentable
+androidx.core.content.ContentResolverCompat
+androidx.core.content.ContextCompat:
+    private static final java.lang.String TAG
+    private static android.util.TypedValue sTempValue
+    158:160:protected ContextCompat()
+    188:188:public static boolean startActivities(android.content.Context,android.content.Intent[])
+    220:225:public static boolean startActivities(android.content.Context,android.content.Intent[],android.os.Bundle)
+    247:252:public static void startActivity(android.content.Context,android.content.Intent,android.os.Bundle)
+    271:275:public static java.io.File getDataDir(android.content.Context)
+    324:327:public static java.io.File[] getObbDirs(android.content.Context)
+    438:446:private static varargs java.io.File buildPath(java.io.File,java.lang.String[])
+    462:479:public static android.graphics.drawable.Drawable getDrawable(android.content.Context,int)
+    500:503:public static android.content.res.ColorStateList getColorStateList(android.content.Context,int)
+    522:525:public static int getColor(android.content.Context,int)
+    563:567:public static java.io.File getNoBackupFilesDir(android.content.Context)
+    587:591:public static java.io.File getCodeCacheDir(android.content.Context)
+    596:606:private static synchronized java.io.File createFilesDir(java.io.File)
+    642:645:public static android.content.Context createDeviceProtectedStorageContext(android.content.Context)
+    656:659:public static boolean isDeviceProtectedStorage(android.content.Context)
+    674:680:public static void startForegroundService(android.content.Context,android.content.Intent)
+    694:699:public static java.lang.Object getSystemService(android.content.Context,java.lang.Class)
+    714:717:public static java.lang.String getSystemServiceName(android.content.Context,java.lang.Class)
+androidx.core.content.ContextCompat$LegacyServiceMapHolder
+androidx.core.content.IntentCompat
+androidx.core.content.MimeTypeFilter
+androidx.core.content.PermissionChecker
+androidx.core.content.PermissionChecker$PermissionResult
+androidx.core.content.SharedPreferencesCompat
+androidx.core.content.SharedPreferencesCompat$EditorCompat
+androidx.core.content.SharedPreferencesCompat$EditorCompat$Helper
+androidx.core.content.pm.ActivityInfoCompat
+androidx.core.content.pm.PackageInfoCompat
+androidx.core.content.pm.PermissionInfoCompat
+androidx.core.content.pm.PermissionInfoCompat$Protection
+androidx.core.content.pm.PermissionInfoCompat$ProtectionFlags
+androidx.core.content.pm.ShortcutInfoCompat
+androidx.core.content.pm.ShortcutInfoCompat$Builder
+androidx.core.content.pm.ShortcutManagerCompat
+androidx.core.content.pm.ShortcutManagerCompat$1
+androidx.core.content.res.ColorStateListInflaterCompat
+androidx.core.content.res.ComplexColorCompat
+androidx.core.content.res.ConfigurationHelper
+androidx.core.content.res.FontResourcesParserCompat
+androidx.core.content.res.FontResourcesParserCompat$FamilyResourceEntry
+androidx.core.content.res.FontResourcesParserCompat$FetchStrategy
+androidx.core.content.res.FontResourcesParserCompat$FontFamilyFilesResourceEntry
+androidx.core.content.res.FontResourcesParserCompat$FontFileResourceEntry
+androidx.core.content.res.FontResourcesParserCompat$ProviderResourceEntry
+androidx.core.content.res.GradientColorInflaterCompat
+androidx.core.content.res.GradientColorInflaterCompat$ColorStops
+androidx.core.content.res.GrowingArrayUtils
+androidx.core.content.res.ResourcesCompat
+androidx.core.content.res.ResourcesCompat$FontCallback
+androidx.core.content.res.ResourcesCompat$FontCallback$1
+androidx.core.content.res.ResourcesCompat$FontCallback$2
+androidx.core.content.res.TypedArrayUtils
+androidx.core.database.CursorWindowCompat
+androidx.core.database.DatabaseUtilsCompat
+androidx.core.database.sqlite.SQLiteCursorCompat
+androidx.core.graphics.BitmapCompat
+androidx.core.graphics.ColorUtils
+androidx.core.graphics.PaintCompat
+androidx.core.graphics.PathParser
+androidx.core.graphics.PathParser$ExtractFloatResult
+androidx.core.graphics.PathParser$PathDataNode
+androidx.core.graphics.PathSegment
+androidx.core.graphics.PathUtils
+androidx.core.graphics.TypefaceCompat
+androidx.core.graphics.TypefaceCompatApi21Impl
+androidx.core.graphics.TypefaceCompatApi24Impl
+androidx.core.graphics.TypefaceCompatApi26Impl
+androidx.core.graphics.TypefaceCompatApi28Impl
+androidx.core.graphics.TypefaceCompatBaseImpl
+androidx.core.graphics.TypefaceCompatBaseImpl$1
+androidx.core.graphics.TypefaceCompatBaseImpl$2
+androidx.core.graphics.TypefaceCompatBaseImpl$StyleExtractor
+androidx.core.graphics.TypefaceCompatUtil
+androidx.core.graphics.drawable.DrawableCompat
+androidx.core.graphics.drawable.IconCompat:
+    private static final java.lang.String TAG
+    public static final int TYPE_UNKNOWN
+    private static final float ADAPTIVE_ICON_INSET_FACTOR
+    private static final float DEFAULT_VIEW_PORT_SCALE
+    private static final float ICON_DIAMETER_FACTOR
+    private static final float BLUR_FACTOR
+    private static final float KEY_SHADOW_OFFSET_FACTOR
+    private static final int KEY_SHADOW_ALPHA
+    private static final int AMBIENT_SHADOW_ALPHA
+    private static final java.lang.String EXTRA_TYPE
+    private static final java.lang.String EXTRA_OBJ
+    private static final java.lang.String EXTRA_INT1
+    private static final java.lang.String EXTRA_INT2
+    private static final java.lang.String EXTRA_TINT_LIST
+    private static final java.lang.String EXTRA_TINT_MODE
+    194:197:public static androidx.core.graphics.drawable.IconCompat createWithResource(android.content.Context,int)
+    205:222:public static androidx.core.graphics.drawable.IconCompat createWithResource(android.content.res.Resources,java.lang.String,int)
+    231:236:public static androidx.core.graphics.drawable.IconCompat createWithBitmap(android.graphics.Bitmap)
+    246:251:public static androidx.core.graphics.drawable.IconCompat createWithAdaptiveBitmap(android.graphics.Bitmap)
+    264:271:public static androidx.core.graphics.drawable.IconCompat createWithData(byte[],int,int)
+    281:286:public static androidx.core.graphics.drawable.IconCompat createWithContentUri(java.lang.String)
+    296:299:public static androidx.core.graphics.drawable.IconCompat createWithContentUri(android.net.Uri)
+    172:312:private IconCompat(int)
+    323:326:public int getType()
+    374:377:public android.net.Uri getUri()
+    387:387:public androidx.core.graphics.drawable.IconCompat setTint(int)
+    397:398:public androidx.core.graphics.drawable.IconCompat setTintList(android.content.res.ColorStateList)
+    408:409:public androidx.core.graphics.drawable.IconCompat setTintMode(android.graphics.PorterDuff$Mode)
+    420:453:public android.graphics.drawable.Icon toIcon()
+    461:478:public void checkResource(android.content.Context)
+    489:499:public android.graphics.drawable.Drawable loadDrawable(android.content.Context)
+    507:558:private android.graphics.drawable.Drawable loadDrawableInner(android.content.Context)
+    562:577:private static android.content.res.Resources getResources(android.content.Context,java.lang.String)
+    590:639:public void addToShortcutIntent(android.content.Intent,android.graphics.drawable.Drawable,android.content.Context)
+    646:675:public android.os.Bundle toBundle()
+    803:831:public static androidx.core.graphics.drawable.IconCompat createFromBundle(android.os.Bundle)
+    840:855:public static androidx.core.graphics.drawable.IconCompat createFromIcon(android.content.Context,android.graphics.drawable.Icon)
+    866:875:public static androidx.core.graphics.drawable.IconCompat createFromIcon(android.graphics.drawable.Icon)
+    888:901:private static int getType(android.graphics.drawable.Icon)
+    973:986:private static android.net.Uri getUri(android.graphics.drawable.Icon)
+    999:1034:static android.graphics.Bitmap createLegacyIconFromAdaptiveIcon(android.graphics.Bitmap,boolean)
+androidx.core.graphics.drawable.IconCompat$IconType
+androidx.core.graphics.drawable.RoundedBitmapDrawable
+androidx.core.graphics.drawable.RoundedBitmapDrawable21
+androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
+androidx.core.graphics.drawable.RoundedBitmapDrawableFactory$DefaultRoundedBitmapDrawable
+androidx.core.graphics.drawable.TintAwareDrawable
+androidx.core.graphics.drawable.WrappedDrawable
+androidx.core.graphics.drawable.WrappedDrawableApi14
+androidx.core.graphics.drawable.WrappedDrawableApi14$DrawableWrapperState
+androidx.core.graphics.drawable.WrappedDrawableApi14$DrawableWrapperStateBase
+androidx.core.graphics.drawable.WrappedDrawableApi21
+androidx.core.graphics.drawable.WrappedDrawableApi21$DrawableWrapperStateLollipop
+androidx.core.hardware.display.DisplayManagerCompat
+androidx.core.hardware.fingerprint.FingerprintManagerCompat
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$1
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationCallback
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationResult
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$CryptoObject
+androidx.core.internal.package-info
+androidx.core.internal.view.SupportMenu
+androidx.core.internal.view.SupportMenuItem
+androidx.core.internal.view.SupportSubMenu
+androidx.core.math.MathUtils
+androidx.core.net.ConnectivityManagerCompat
+androidx.core.net.ConnectivityManagerCompat$RestrictBackgroundStatus
+androidx.core.net.DatagramSocketWrapper
+androidx.core.net.DatagramSocketWrapper$DatagramSocketImplWrapper
+androidx.core.net.TrafficStatsCompat
+androidx.core.os.BuildCompat
+androidx.core.os.CancellationSignal
+androidx.core.os.CancellationSignal$OnCancelListener
+androidx.core.os.ConfigurationCompat
+androidx.core.os.EnvironmentCompat
+androidx.core.os.HandlerCompat
+androidx.core.os.LocaleHelper
+androidx.core.os.LocaleListCompat
+androidx.core.os.LocaleListCompat$LocaleListCompatApi24Impl
+androidx.core.os.LocaleListCompat$LocaleListCompatBaseImpl
+androidx.core.os.LocaleListHelper
+androidx.core.os.LocaleListInterface
+androidx.core.os.OperationCanceledException
+androidx.core.os.ParcelCompat
+androidx.core.os.ParcelableCompat
+androidx.core.os.ParcelableCompat$ParcelableCompatCreatorHoneycombMR2
+androidx.core.os.ParcelableCompatCreatorCallbacks
+androidx.core.os.TraceCompat
+androidx.core.os.UserManagerCompat
+androidx.core.provider.FontRequest
+androidx.core.provider.FontsContractCompat
+androidx.core.provider.FontsContractCompat$1
+androidx.core.provider.FontsContractCompat$2
+androidx.core.provider.FontsContractCompat$3
+androidx.core.provider.FontsContractCompat$4
+androidx.core.provider.FontsContractCompat$4$1
+androidx.core.provider.FontsContractCompat$4$2
+androidx.core.provider.FontsContractCompat$4$3
+androidx.core.provider.FontsContractCompat$4$4
+androidx.core.provider.FontsContractCompat$4$5
+androidx.core.provider.FontsContractCompat$4$6
+androidx.core.provider.FontsContractCompat$4$7
+androidx.core.provider.FontsContractCompat$4$8
+androidx.core.provider.FontsContractCompat$4$9
+androidx.core.provider.FontsContractCompat$5
+androidx.core.provider.FontsContractCompat$Columns
+androidx.core.provider.FontsContractCompat$FontFamilyResult
+androidx.core.provider.FontsContractCompat$FontInfo
+androidx.core.provider.FontsContractCompat$FontRequestCallback
+androidx.core.provider.FontsContractCompat$FontRequestCallback$FontRequestFailReason
+androidx.core.provider.FontsContractCompat$TypefaceResult
+androidx.core.provider.SelfDestructiveThread
+androidx.core.provider.SelfDestructiveThread$1
+androidx.core.provider.SelfDestructiveThread$2
+androidx.core.provider.SelfDestructiveThread$2$1
+androidx.core.provider.SelfDestructiveThread$3
+androidx.core.provider.SelfDestructiveThread$ReplyCallback
+androidx.core.text.BidiFormatter
+androidx.core.text.BidiFormatter$Builder
+androidx.core.text.BidiFormatter$DirectionalityEstimator
+androidx.core.text.HtmlCompat
+androidx.core.text.ICUCompat
+androidx.core.text.PrecomputedTextCompat
+androidx.core.text.PrecomputedTextCompat$Params
+androidx.core.text.PrecomputedTextCompat$Params$Builder
+androidx.core.text.PrecomputedTextCompat$PrecomputedTextFutureTask
+androidx.core.text.PrecomputedTextCompat$PrecomputedTextFutureTask$PrecomputedTextCallback
+androidx.core.text.TextDirectionHeuristicCompat
+androidx.core.text.TextDirectionHeuristicsCompat
+androidx.core.text.TextDirectionHeuristicsCompat$AnyStrong
+androidx.core.text.TextDirectionHeuristicsCompat$FirstStrong
+androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionAlgorithm
+androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl
+androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal
+androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale
+androidx.core.text.TextUtilsCompat
+androidx.core.text.util.FindAddress
+androidx.core.text.util.FindAddress$ZipRange
+androidx.core.text.util.LinkifyCompat
+androidx.core.text.util.LinkifyCompat$1
+androidx.core.text.util.LinkifyCompat$LinkSpec
+androidx.core.text.util.LinkifyCompat$LinkifyMask
+androidx.core.util.AtomicFile
+androidx.core.util.Consumer
+androidx.core.util.DebugUtils
+androidx.core.util.LogWriter
+androidx.core.util.ObjectsCompat
+androidx.core.util.Pair
+androidx.core.util.PatternsCompat
+androidx.core.util.Pools
+androidx.core.util.Pools$Pool
+androidx.core.util.Pools$SimplePool
+androidx.core.util.Pools$SynchronizedPool
+androidx.core.util.Preconditions
+androidx.core.util.TimeUtils
+androidx.core.view.AccessibilityDelegateCompat
+androidx.core.view.AccessibilityDelegateCompat$AccessibilityDelegateAdapter
+androidx.core.view.ActionProvider
+androidx.core.view.ActionProvider$SubUiVisibilityListener
+androidx.core.view.ActionProvider$VisibilityListener
+androidx.core.view.DisplayCutoutCompat
+androidx.core.view.DragAndDropPermissionsCompat
+androidx.core.view.DragStartHelper
+androidx.core.view.DragStartHelper$1
+androidx.core.view.DragStartHelper$2
+androidx.core.view.DragStartHelper$OnDragStartListener
+androidx.core.view.GestureDetectorCompat
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImpl
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplBase
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler
+androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplJellybeanMr2
+androidx.core.view.GravityCompat
+androidx.core.view.InputDeviceCompat
+androidx.core.view.KeyEventDispatcher
+androidx.core.view.KeyEventDispatcher$Component
+androidx.core.view.LayoutInflaterCompat
+androidx.core.view.LayoutInflaterCompat$Factory2Wrapper
+androidx.core.view.LayoutInflaterFactory
+androidx.core.view.MarginLayoutParamsCompat
+androidx.core.view.MenuCompat
+androidx.core.view.MenuItemCompat
+androidx.core.view.MenuItemCompat$1
+androidx.core.view.MenuItemCompat$OnActionExpandListener
+androidx.core.view.MotionEventCompat
+androidx.core.view.NestedScrollingChild
+androidx.core.view.NestedScrollingChild2
+androidx.core.view.NestedScrollingChildHelper
+androidx.core.view.NestedScrollingParent
+androidx.core.view.NestedScrollingParent2
+androidx.core.view.NestedScrollingParentHelper
+androidx.core.view.OnApplyWindowInsetsListener
+androidx.core.view.PointerIconCompat
+androidx.core.view.ScaleGestureDetectorCompat
+androidx.core.view.ScrollingView
+androidx.core.view.TintableBackgroundView
+androidx.core.view.VelocityTrackerCompat
+androidx.core.view.ViewCompat
+androidx.core.view.ViewCompat$1
+androidx.core.view.ViewCompat$FocusDirection
+androidx.core.view.ViewCompat$FocusRealDirection
+androidx.core.view.ViewCompat$FocusRelativeDirection
+androidx.core.view.ViewCompat$NestedScrollType
+androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat
+androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerWrapper
+androidx.core.view.ViewCompat$ScrollAxis
+androidx.core.view.ViewCompat$ScrollIndicators
+androidx.core.view.ViewCompat$UnhandledKeyEventManager
+androidx.core.view.ViewConfigurationCompat
+androidx.core.view.ViewGroupCompat
+androidx.core.view.ViewParentCompat
+androidx.core.view.ViewPropertyAnimatorCompat
+androidx.core.view.ViewPropertyAnimatorCompat$1
+androidx.core.view.ViewPropertyAnimatorCompat$2
+androidx.core.view.ViewPropertyAnimatorCompat$ViewPropertyAnimatorListenerApi14
+androidx.core.view.ViewPropertyAnimatorListener
+androidx.core.view.ViewPropertyAnimatorListenerAdapter
+androidx.core.view.ViewPropertyAnimatorUpdateListener
+androidx.core.view.WindowCompat
+androidx.core.view.WindowInsetsCompat
+androidx.core.view.accessibility.AccessibilityEventCompat
+androidx.core.view.accessibility.AccessibilityManagerCompat
+androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListener
+androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerWrapper
+androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListener
+androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListenerWrapper
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityActionCompat
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionInfoCompat
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat
+androidx.core.view.accessibility.AccessibilityNodeProviderCompat
+androidx.core.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderApi16
+androidx.core.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderApi19
+androidx.core.view.accessibility.AccessibilityRecordCompat
+androidx.core.view.accessibility.AccessibilityWindowInfoCompat
+androidx.core.view.animation.PathInterpolatorApi14
+androidx.core.view.animation.PathInterpolatorCompat
+androidx.core.view.inputmethod.EditorInfoCompat
+androidx.core.view.inputmethod.InputConnectionCompat
+androidx.core.view.inputmethod.InputConnectionCompat$1
+androidx.core.view.inputmethod.InputConnectionCompat$2
+androidx.core.view.inputmethod.InputConnectionCompat$OnCommitContentListener
+androidx.core.view.inputmethod.InputContentInfoCompat
+androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatApi25Impl
+androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatBaseImpl
+androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatImpl
+androidx.core.widget.AutoScrollHelper
+androidx.core.widget.AutoScrollHelper$ClampedScroller
+androidx.core.widget.AutoScrollHelper$ScrollAnimationRunnable
+androidx.core.widget.AutoSizeableTextView
+androidx.core.widget.CompoundButtonCompat
+androidx.core.widget.ContentLoadingProgressBar
+androidx.core.widget.ContentLoadingProgressBar$1
+androidx.core.widget.ContentLoadingProgressBar$2
+androidx.core.widget.EdgeEffectCompat
+androidx.core.widget.ImageViewCompat
+androidx.core.widget.ListPopupWindowCompat
+androidx.core.widget.ListViewAutoScrollHelper
+androidx.core.widget.ListViewCompat
+androidx.core.widget.NestedScrollView
+androidx.core.widget.NestedScrollView$AccessibilityDelegate
+androidx.core.widget.NestedScrollView$OnScrollChangeListener
+androidx.core.widget.NestedScrollView$SavedState
+androidx.core.widget.NestedScrollView$SavedState$1
+androidx.core.widget.PopupMenuCompat
+androidx.core.widget.PopupWindowCompat
+androidx.core.widget.ScrollerCompat
+androidx.core.widget.TextViewCompat
+androidx.core.widget.TextViewCompat$AutoSizeTextType
+androidx.core.widget.TextViewCompat$OreoCallback
+androidx.core.widget.TintableCompoundButton
+androidx.core.widget.TintableImageSourceView
+androidx.cursoradapter.R
+androidx.cursoradapter.widget.CursorAdapter
+androidx.cursoradapter.widget.CursorAdapter$ChangeObserver
+androidx.cursoradapter.widget.CursorAdapter$MyDataSetObserver
+androidx.cursoradapter.widget.CursorFilter
+androidx.cursoradapter.widget.CursorFilter$CursorFilterClient
+androidx.cursoradapter.widget.ResourceCursorAdapter
+androidx.cursoradapter.widget.SimpleCursorAdapter
+androidx.cursoradapter.widget.SimpleCursorAdapter$CursorToStringConverter
+androidx.cursoradapter.widget.SimpleCursorAdapter$ViewBinder
+androidx.customview.R
+androidx.customview.R$attr
+androidx.customview.R$color
+androidx.customview.R$dimen
+androidx.customview.R$drawable
+androidx.customview.R$id
+androidx.customview.R$integer
+androidx.customview.R$layout
+androidx.customview.R$string
+androidx.customview.R$style
+androidx.customview.R$styleable
+androidx.customview.view.AbsSavedState
+androidx.customview.view.AbsSavedState$1
+androidx.customview.view.AbsSavedState$2
+androidx.customview.widget.ExploreByTouchHelper
+androidx.customview.widget.ExploreByTouchHelper$1
+androidx.customview.widget.ExploreByTouchHelper$2
+androidx.customview.widget.ExploreByTouchHelper$MyNodeProvider
+androidx.customview.widget.FocusStrategy
+androidx.customview.widget.FocusStrategy$BoundsAdapter
+androidx.customview.widget.FocusStrategy$CollectionAdapter
+androidx.customview.widget.FocusStrategy$SequentialComparator
+androidx.customview.widget.ViewDragHelper
+androidx.customview.widget.ViewDragHelper$1
+androidx.customview.widget.ViewDragHelper$2
+androidx.customview.widget.ViewDragHelper$Callback
+androidx.documentfile.R
+androidx.documentfile.provider.DocumentFile
+androidx.documentfile.provider.DocumentsContractApi19
+androidx.documentfile.provider.RawDocumentFile
+androidx.documentfile.provider.SingleDocumentFile
+androidx.documentfile.provider.TreeDocumentFile
+androidx.drawerlayout.R
+androidx.drawerlayout.R$attr
+androidx.drawerlayout.R$color
+androidx.drawerlayout.R$dimen
+androidx.drawerlayout.R$drawable
+androidx.drawerlayout.R$id
+androidx.drawerlayout.R$integer
+androidx.drawerlayout.R$layout
+androidx.drawerlayout.R$string
+androidx.drawerlayout.R$style
+androidx.drawerlayout.R$styleable
+androidx.drawerlayout.widget.DrawerLayout
+androidx.drawerlayout.widget.DrawerLayout$1
+androidx.drawerlayout.widget.DrawerLayout$AccessibilityDelegate
+androidx.drawerlayout.widget.DrawerLayout$ChildAccessibilityDelegate
+androidx.drawerlayout.widget.DrawerLayout$DrawerListener
+androidx.drawerlayout.widget.DrawerLayout$LayoutParams
+androidx.drawerlayout.widget.DrawerLayout$SavedState
+androidx.drawerlayout.widget.DrawerLayout$SavedState$1
+androidx.drawerlayout.widget.DrawerLayout$SimpleDrawerListener
+androidx.drawerlayout.widget.DrawerLayout$ViewDragCallback
+androidx.drawerlayout.widget.DrawerLayout$ViewDragCallback$1
+androidx.fragment.R
+androidx.fragment.R$attr
+androidx.fragment.R$color
+androidx.fragment.R$dimen
+androidx.fragment.R$drawable
+androidx.fragment.R$id
+androidx.fragment.R$integer
+androidx.fragment.R$layout
+androidx.fragment.R$string
+androidx.fragment.R$style
+androidx.fragment.R$styleable
+androidx.fragment.app.BackStackRecord
+androidx.fragment.app.BackStackRecord$Op
+androidx.fragment.app.BackStackState
+androidx.fragment.app.BackStackState$1
+androidx.fragment.app.DialogFragment
+androidx.fragment.app.Fragment
+androidx.fragment.app.Fragment$1
+androidx.fragment.app.Fragment$2
+androidx.fragment.app.Fragment$3
+androidx.fragment.app.Fragment$AnimationInfo
+androidx.fragment.app.Fragment$InstantiationException
+androidx.fragment.app.Fragment$OnStartEnterTransitionListener
+androidx.fragment.app.Fragment$SavedState
+androidx.fragment.app.Fragment$SavedState$1
+androidx.fragment.app.FragmentActivity
+androidx.fragment.app.FragmentActivity$1
+androidx.fragment.app.FragmentActivity$HostCallbacks
+androidx.fragment.app.FragmentActivity$NonConfigurationInstances
+androidx.fragment.app.FragmentContainer
+androidx.fragment.app.FragmentController
+androidx.fragment.app.FragmentHostCallback
+androidx.fragment.app.FragmentManager
+androidx.fragment.app.FragmentManager$BackStackEntry
+androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks
+androidx.fragment.app.FragmentManager$OnBackStackChangedListener
+androidx.fragment.app.FragmentManagerImpl
+androidx.fragment.app.FragmentManagerImpl$1
+androidx.fragment.app.FragmentManagerImpl$2
+androidx.fragment.app.FragmentManagerImpl$2$1
+androidx.fragment.app.FragmentManagerImpl$3
+androidx.fragment.app.FragmentManagerImpl$4
+androidx.fragment.app.FragmentManagerImpl$AnimateOnHWLayerIfNeededListener
+androidx.fragment.app.FragmentManagerImpl$AnimateOnHWLayerIfNeededListener$1
+androidx.fragment.app.FragmentManagerImpl$AnimationListenerWrapper
+androidx.fragment.app.FragmentManagerImpl$AnimationOrAnimator
+androidx.fragment.app.FragmentManagerImpl$AnimatorOnHWLayerIfNeededListener
+androidx.fragment.app.FragmentManagerImpl$EndViewTransitionAnimator
+androidx.fragment.app.FragmentManagerImpl$FragmentLifecycleCallbacksHolder
+androidx.fragment.app.FragmentManagerImpl$FragmentTag
+androidx.fragment.app.FragmentManagerImpl$OpGenerator
+androidx.fragment.app.FragmentManagerImpl$PopBackStackState
+androidx.fragment.app.FragmentManagerImpl$StartEnterTransitionListener
+androidx.fragment.app.FragmentManagerNonConfig
+androidx.fragment.app.FragmentManagerState
+androidx.fragment.app.FragmentManagerState$1
+androidx.fragment.app.FragmentPagerAdapter
+androidx.fragment.app.FragmentState
+androidx.fragment.app.FragmentState$1
+androidx.fragment.app.FragmentStatePagerAdapter
+androidx.fragment.app.FragmentTabHost
+androidx.fragment.app.FragmentTabHost$DummyTabFactory
+androidx.fragment.app.FragmentTabHost$SavedState
+androidx.fragment.app.FragmentTabHost$SavedState$1
+androidx.fragment.app.FragmentTabHost$TabInfo
+androidx.fragment.app.FragmentTransaction
+androidx.fragment.app.FragmentTransition
+androidx.fragment.app.FragmentTransition$1
+androidx.fragment.app.FragmentTransition$2
+androidx.fragment.app.FragmentTransition$3
+androidx.fragment.app.FragmentTransition$4
+androidx.fragment.app.FragmentTransition$FragmentContainerTransition
+androidx.fragment.app.FragmentTransitionCompat21
+androidx.fragment.app.FragmentTransitionCompat21$1
+androidx.fragment.app.FragmentTransitionCompat21$2
+androidx.fragment.app.FragmentTransitionCompat21$3
+androidx.fragment.app.FragmentTransitionCompat21$4
+androidx.fragment.app.FragmentTransitionImpl
+androidx.fragment.app.FragmentTransitionImpl$1
+androidx.fragment.app.FragmentTransitionImpl$2
+androidx.fragment.app.FragmentTransitionImpl$3
+androidx.fragment.app.ListFragment
+androidx.fragment.app.ListFragment$1
+androidx.fragment.app.ListFragment$2
+androidx.fragment.app.OneShotPreDrawListener
+androidx.fragment.app.SuperNotCalledException
+androidx.interpolator.R
+androidx.interpolator.view.animation.FastOutLinearInInterpolator
+androidx.interpolator.view.animation.FastOutSlowInInterpolator
+androidx.interpolator.view.animation.LinearOutSlowInInterpolator
+androidx.interpolator.view.animation.LookupTableInterpolator
+androidx.legacy.app.ActionBarDrawerToggle
+androidx.legacy.app.ActionBarDrawerToggle$Delegate
+androidx.legacy.app.ActionBarDrawerToggle$DelegateProvider
+androidx.legacy.app.ActionBarDrawerToggle$SetIndicatorInfo
+androidx.legacy.app.ActionBarDrawerToggle$SlideDrawable
+androidx.legacy.content.WakefulBroadcastReceiver
+androidx.legacy.coreui.R
+androidx.legacy.coreui.R$attr
+androidx.legacy.coreui.R$color
+androidx.legacy.coreui.R$dimen
+androidx.legacy.coreui.R$drawable
+androidx.legacy.coreui.R$id
+androidx.legacy.coreui.R$integer
+androidx.legacy.coreui.R$layout
+androidx.legacy.coreui.R$string
+androidx.legacy.coreui.R$style
+androidx.legacy.coreui.R$styleable
+androidx.legacy.coreutils.R
+androidx.legacy.coreutils.R$attr
+androidx.legacy.coreutils.R$color
+androidx.legacy.coreutils.R$dimen
+androidx.legacy.coreutils.R$drawable
+androidx.legacy.coreutils.R$id
+androidx.legacy.coreutils.R$integer
+androidx.legacy.coreutils.R$layout
+androidx.legacy.coreutils.R$string
+androidx.legacy.coreutils.R$style
+androidx.legacy.coreutils.R$styleable
+androidx.legacy.v4.R
+androidx.legacy.v4.R$attr
+androidx.legacy.v4.R$color
+androidx.legacy.v4.R$dimen
+androidx.legacy.v4.R$drawable
+androidx.legacy.v4.R$id
+androidx.legacy.v4.R$integer
+androidx.legacy.v4.R$layout
+androidx.legacy.v4.R$string
+androidx.legacy.v4.R$style
+androidx.legacy.v4.R$styleable
+androidx.legacy.widget.Space
+androidx.lifecycle.AndroidViewModel
+androidx.lifecycle.ClassesInfoCache
+androidx.lifecycle.ClassesInfoCache$CallbackInfo
+androidx.lifecycle.ClassesInfoCache$MethodReference
+androidx.lifecycle.CompositeGeneratedAdaptersObserver:
+    private final androidx.lifecycle.GeneratedAdapter[] mGeneratedAdapters
+    30:32:CompositeGeneratedAdaptersObserver(androidx.lifecycle.GeneratedAdapter[])
+    36:43:public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+androidx.lifecycle.ComputableLiveData
+androidx.lifecycle.ComputableLiveData$1
+androidx.lifecycle.ComputableLiveData$2
+androidx.lifecycle.ComputableLiveData$3
+androidx.lifecycle.FullLifecycleObserver
+androidx.lifecycle.FullLifecycleObserverAdapter:
+    private final androidx.lifecycle.FullLifecycleObserver mObserver
+    23:25:FullLifecycleObserverAdapter(androidx.lifecycle.FullLifecycleObserver)
+    29:51:public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+androidx.lifecycle.FullLifecycleObserverAdapter$1
+androidx.lifecycle.GeneratedAdapter
+androidx.lifecycle.GenericLifecycleObserver
+androidx.lifecycle.Lifecycle
+androidx.lifecycle.Lifecycle$Event
+androidx.lifecycle.Lifecycle$State
+androidx.lifecycle.LifecycleObserver
+androidx.lifecycle.LifecycleOwner
+androidx.lifecycle.LifecycleRegistry
+androidx.lifecycle.LifecycleRegistry$1
+androidx.lifecycle.LifecycleRegistry$ObserverWithState
+androidx.lifecycle.LifecycleRegistryOwner
+androidx.lifecycle.Lifecycling
+androidx.lifecycle.LiveData:
+    final java.lang.Object mDataLock
+    static final int START_VERSION
+    private androidx.arch.core.internal.SafeIterableMap mObservers
+    int mActiveCount
+    private volatile java.lang.Object mData
+    volatile java.lang.Object mPendingData
+    private int mVersion
+    private boolean mDispatchingValue
+    private boolean mDispatchInvalidated
+    private final java.lang.Runnable mPostValueRunnable
+    59:429:public LiveData()
+    96:114:private void considerNotify(androidx.lifecycle.LiveData$ObserverWrapper)
+    118:139:void dispatchingValue(androidx.lifecycle.LiveData$ObserverWrapper)
+    171:186:public void observe(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
+    204:215:public void observeForever(androidx.lifecycle.Observer)
+    224:231:public void removeObserver(androidx.lifecycle.Observer)
+    241:247:public void removeObservers(androidx.lifecycle.LifecycleOwner)
+    266:274:protected void postValue(java.lang.Object)
+    286:290:protected void setValue(java.lang.Object)
+    301:306:public java.lang.Object getValue()
+    310:310:int getVersion()
+    321:321:protected void onActive()
+    334:334:protected void onInactive()
+    343:343:public boolean hasObservers()
+    353:353:public boolean hasActiveObservers()
+    442:446:private static void assertMainThread(java.lang.String)
+androidx.lifecycle.LiveData$1
+androidx.lifecycle.LiveData$AlwaysActiveObserver
+androidx.lifecycle.LiveData$LifecycleBoundObserver:
+    final androidx.lifecycle.LifecycleOwner mOwner
+    final synthetic androidx.lifecycle.LiveData this$0
+    360:363:LiveData$LifecycleBoundObserver(androidx.lifecycle.LiveData,androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
+    367:367:boolean shouldBeActive()
+    372:377:public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+    381:381:boolean isAttachedTo(androidx.lifecycle.LifecycleOwner)
+    386:387:void detachObserver()
+androidx.lifecycle.LiveData$ObserverWrapper:
+    final androidx.lifecycle.Observer mObserver
+    boolean mActive
+    int mLastVersion
+    final synthetic androidx.lifecycle.LiveData this$0
+    393:397:LiveData$ObserverWrapper(androidx.lifecycle.LiveData,androidx.lifecycle.Observer)
+    abstract boolean shouldBeActive()
+    402:402:boolean isAttachedTo(androidx.lifecycle.LifecycleOwner)
+    406:406:void detachObserver()
+    409:426:void activeStateChanged(boolean)
+androidx.lifecycle.MediatorLiveData
+androidx.lifecycle.MediatorLiveData$Source
+androidx.lifecycle.MethodCallsLogger
+androidx.lifecycle.MutableLiveData
+androidx.lifecycle.Observer
+androidx.lifecycle.OnLifecycleEvent
+androidx.lifecycle.R
+androidx.lifecycle.ReflectiveGenericLifecycleObserver:
+    private final java.lang.Object mWrapped
+    private final androidx.lifecycle.ClassesInfoCache$CallbackInfo mInfo
+    29:32:ReflectiveGenericLifecycleObserver(java.lang.Object)
+    36:37:public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+androidx.lifecycle.ReportFragment
+androidx.lifecycle.ReportFragment$ActivityInitializationListener
+androidx.lifecycle.SingleGeneratedAdapterObserver:
+    private final androidx.lifecycle.GeneratedAdapter mGeneratedAdapter
+    29:31:SingleGeneratedAdapterObserver(androidx.lifecycle.GeneratedAdapter)
+    35:37:public void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event)
+androidx.lifecycle.Transformations
+androidx.lifecycle.Transformations$1
+androidx.lifecycle.Transformations$2
+androidx.lifecycle.Transformations$2$1
+androidx.lifecycle.ViewModel
+androidx.lifecycle.ViewModelProvider
+androidx.lifecycle.ViewModelProvider$AndroidViewModelFactory
+androidx.lifecycle.ViewModelProvider$Factory
+androidx.lifecycle.ViewModelProvider$NewInstanceFactory
+androidx.lifecycle.ViewModelStore
+androidx.lifecycle.ViewModelStoreOwner
+androidx.lifecycle.livedata.R
+androidx.lifecycle.livedata.core.R
+androidx.lifecycle.viewmodel.R
+androidx.loader.R
+androidx.loader.R$attr
+androidx.loader.R$color
+androidx.loader.R$dimen
+androidx.loader.R$drawable
+androidx.loader.R$id
+androidx.loader.R$integer
+androidx.loader.R$layout
+androidx.loader.R$string
+androidx.loader.R$style
+androidx.loader.R$styleable
+androidx.loader.app.LoaderManager
+androidx.loader.app.LoaderManager$LoaderCallbacks
+androidx.loader.app.LoaderManagerImpl
+androidx.loader.app.LoaderManagerImpl$LoaderInfo
+androidx.loader.app.LoaderManagerImpl$LoaderObserver
+androidx.loader.app.LoaderManagerImpl$LoaderViewModel
+androidx.loader.app.LoaderManagerImpl$LoaderViewModel$1
+androidx.loader.content.AsyncTaskLoader
+androidx.loader.content.AsyncTaskLoader$LoadTask
+androidx.loader.content.CursorLoader
+androidx.loader.content.Loader
+androidx.loader.content.Loader$ForceLoadContentObserver
+androidx.loader.content.Loader$OnLoadCanceledListener
+androidx.loader.content.Loader$OnLoadCompleteListener
+androidx.loader.content.ModernAsyncTask
+androidx.loader.content.ModernAsyncTask$1
+androidx.loader.content.ModernAsyncTask$2
+androidx.loader.content.ModernAsyncTask$3
+androidx.loader.content.ModernAsyncTask$4
+androidx.loader.content.ModernAsyncTask$AsyncTaskResult
+androidx.loader.content.ModernAsyncTask$InternalHandler
+androidx.loader.content.ModernAsyncTask$Status
+androidx.loader.content.ModernAsyncTask$WorkerRunnable
+androidx.localbroadcastmanager.R
+androidx.localbroadcastmanager.content.LocalBroadcastManager
+androidx.localbroadcastmanager.content.LocalBroadcastManager$1
+androidx.localbroadcastmanager.content.LocalBroadcastManager$BroadcastRecord
+androidx.localbroadcastmanager.content.LocalBroadcastManager$ReceiverRecord
+androidx.media.AudioAttributesCompat:
+    private static final java.lang.String TAG
+    public static final int CONTENT_TYPE_UNKNOWN
+    public static final int CONTENT_TYPE_SPEECH
+    public static final int CONTENT_TYPE_MUSIC
+    public static final int CONTENT_TYPE_MOVIE
+    public static final int CONTENT_TYPE_SONIFICATION
+    public static final int USAGE_UNKNOWN
+    public static final int USAGE_MEDIA
+    public static final int USAGE_VOICE_COMMUNICATION
+    public static final int USAGE_VOICE_COMMUNICATION_SIGNALLING
+    public static final int USAGE_ALARM
+    public static final int USAGE_NOTIFICATION
+    public static final int USAGE_NOTIFICATION_RINGTONE
+    public static final int USAGE_NOTIFICATION_COMMUNICATION_REQUEST
+    public static final int USAGE_NOTIFICATION_COMMUNICATION_INSTANT
+    public static final int USAGE_NOTIFICATION_COMMUNICATION_DELAYED
+    public static final int USAGE_NOTIFICATION_EVENT
+    public static final int USAGE_ASSISTANCE_ACCESSIBILITY
+    public static final int USAGE_ASSISTANCE_NAVIGATION_GUIDANCE
+    public static final int USAGE_ASSISTANCE_SONIFICATION
+    public static final int USAGE_GAME
+    private static final int USAGE_VIRTUAL_SOURCE
+    public static final int USAGE_ASSISTANT
+    private static final int SUPPRESSIBLE_NOTIFICATION
+    private static final int SUPPRESSIBLE_CALL
+    static boolean sForceLegacyBehavior
+    public static final int FLAG_AUDIBILITY_ENFORCED
+    static final int FLAG_SECURE
+    static final int FLAG_SCO
+    static final int FLAG_BEACON
+    public static final int FLAG_HW_AV_SYNC
+    static final int FLAG_HW_HOTWORD
+    static final int FLAG_BYPASS_INTERRUPTION_POLICY
+    static final int FLAG_BYPASS_MUTE
+    static final int FLAG_LOW_LATENCY
+    static final int FLAG_DEEP_BUFFER
+    static final int FLAG_ALL
+    static final int FLAG_ALL_PUBLIC
+    static final int INVALID_STREAM_TYPE
+    static final java.lang.String AUDIO_ATTRIBUTES_FRAMEWORKS
+    static final java.lang.String AUDIO_ATTRIBUTES_USAGE
+    static final java.lang.String AUDIO_ATTRIBUTES_CONTENT_TYPE
+    static final java.lang.String AUDIO_ATTRIBUTES_FLAGS
+    static final java.lang.String AUDIO_ATTRIBUTES_LEGACY_STREAM_TYPE
+    255:257:AudioAttributesCompat(androidx.media.AudioAttributesImpl)
+    273:273:public int getVolumeControlStream()
+    286:286:public java.lang.Object unwrap()
+    296:296:public int getLegacyStreamType()
+    307:314:public static androidx.media.AudioAttributesCompat wrap(java.lang.Object)
+    325:325:public int getContentType()
+    334:334:public int getUsage()
+    343:343:public int getFlags()
+    351:351:public android.os.Bundle toBundle()
+    360:365:public static androidx.media.AudioAttributesCompat fromBundle(android.os.Bundle)
+    665:687:static int usageForStreamType(int)
+    698:699:public static void setForceLegacyBehavior(boolean)
+    702:702:static int toVolumeStreamType(boolean,androidx.media.AudioAttributesCompat)
+    706:706:int getRawLegacyStreamType()
+androidx.media.AudioAttributesCompat$AttributeContentType
+androidx.media.AudioAttributesCompat$AttributeUsage
+androidx.media.AudioAttributesCompat$AudioManagerHidden
+androidx.media.AudioAttributesCompat$Builder
+androidx.media.AudioAttributesImpl:
+    public abstract java.lang.Object getAudioAttributes()
+    public abstract int getVolumeControlStream()
+    public abstract int getLegacyStreamType()
+    public abstract int getRawLegacyStreamType()
+    public abstract int getContentType()
+    public abstract int getUsage()
+    public abstract int getFlags()
+    public abstract android.os.Bundle toBundle()
+androidx.media.AudioAttributesImplApi21:
+    private static final java.lang.String TAG
+    static java.lang.reflect.Method sAudioAttributesToLegacyStreamType
+    53:54:AudioAttributesImplApi21(android.media.AudioAttributes)
+    43:58:AudioAttributesImplApi21(android.media.AudioAttributes,int)
+    64:71:static java.lang.reflect.Method getAudioAttributesToLegacyStreamTypeMethod()
+    78:78:public java.lang.Object getAudioAttributes()
+    83:86:public int getVolumeControlStream()
+    91:106:public int getLegacyStreamType()
+    112:112:public int getRawLegacyStreamType()
+    117:117:public int getContentType()
+    122:122:public int getUsage()
+    127:127:public int getFlags()
+    132:137:public android.os.Bundle toBundle()
+    166:176:public static androidx.media.AudioAttributesImpl fromBundle(android.os.Bundle)
+androidx.media.AudioAttributesImplBase:
+    38:57:AudioAttributesImplBase(int,int,int,int)
+    63:63:public java.lang.Object getAudioAttributes()
+    68:68:public int getVolumeControlStream()
+    81:81:public int getRawLegacyStreamType()
+    108:115:public android.os.Bundle toBundle()
+    158:166:public static androidx.media.AudioAttributesImpl fromBundle(android.os.Bundle)
+androidx.media.MediaBrowserCompatUtils
+androidx.media.MediaBrowserProtocol
+androidx.media.MediaBrowserServiceCompat
+androidx.media.MediaBrowserServiceCompat$1
+androidx.media.MediaBrowserServiceCompat$2
+androidx.media.MediaBrowserServiceCompat$3
+androidx.media.MediaBrowserServiceCompat$4
+androidx.media.MediaBrowserServiceCompat$BrowserRoot
+androidx.media.MediaBrowserServiceCompat$ConnectionRecord
+androidx.media.MediaBrowserServiceCompat$ConnectionRecord$1
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImpl
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$1
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$3
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$4
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi23
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi23$1
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi26
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi26$1
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi28
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$1
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$2
+androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$3
+androidx.media.MediaBrowserServiceCompat$Result
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$1
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$2
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$3
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$4
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$5
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$6
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$7
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$8
+androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$9
+androidx.media.MediaBrowserServiceCompat$ServiceCallbacks
+androidx.media.MediaBrowserServiceCompat$ServiceCallbacksCompat
+androidx.media.MediaBrowserServiceCompat$ServiceHandler
+androidx.media.MediaBrowserServiceCompatApi21
+androidx.media.MediaBrowserServiceCompatApi21$BrowserRoot
+androidx.media.MediaBrowserServiceCompatApi21$MediaBrowserServiceAdaptor
+androidx.media.MediaBrowserServiceCompatApi21$ResultWrapper
+androidx.media.MediaBrowserServiceCompatApi21$ServiceCompatProxy
+androidx.media.MediaBrowserServiceCompatApi23
+androidx.media.MediaBrowserServiceCompatApi23$MediaBrowserServiceAdaptor
+androidx.media.MediaBrowserServiceCompatApi23$ServiceCompatProxy
+androidx.media.MediaBrowserServiceCompatApi26
+androidx.media.MediaBrowserServiceCompatApi26$MediaBrowserServiceAdaptor
+androidx.media.MediaBrowserServiceCompatApi26$ResultWrapper
+androidx.media.MediaBrowserServiceCompatApi26$ServiceCompatProxy
+androidx.media.MediaSessionManager
+androidx.media.MediaSessionManager$MediaSessionManagerImpl
+androidx.media.MediaSessionManager$RemoteUserInfo
+androidx.media.MediaSessionManager$RemoteUserInfoImpl
+androidx.media.MediaSessionManagerImplApi21
+androidx.media.MediaSessionManagerImplApi28
+androidx.media.MediaSessionManagerImplApi28$RemoteUserInfoImplApi28
+androidx.media.MediaSessionManagerImplBase
+androidx.media.MediaSessionManagerImplBase$RemoteUserInfoImplBase
+androidx.media.R
+androidx.media.R$attr
+androidx.media.R$color
+androidx.media.R$dimen
+androidx.media.R$drawable
+androidx.media.R$id
+androidx.media.R$integer
+androidx.media.R$layout
+androidx.media.R$string
+androidx.media.R$style
+androidx.media.R$styleable
+androidx.media.VolumeProviderCompat
+androidx.media.VolumeProviderCompat$1
+androidx.media.VolumeProviderCompat$Callback
+androidx.media.VolumeProviderCompat$ControlType
+androidx.media.VolumeProviderCompatApi21
+androidx.media.VolumeProviderCompatApi21$1
+androidx.media.VolumeProviderCompatApi21$Delegate
+androidx.media.app.NotificationCompat
+androidx.media.app.NotificationCompat$DecoratedMediaCustomViewStyle
+androidx.media.app.NotificationCompat$MediaStyle
+androidx.media.session.MediaButtonReceiver
+androidx.media.session.MediaButtonReceiver$MediaButtonConnectionCallback
+androidx.print.PrintHelper
+androidx.print.PrintHelper$1
+androidx.print.PrintHelper$OnPrintFinishCallback
+androidx.print.PrintHelper$PrintBitmapAdapter
+androidx.print.PrintHelper$PrintUriAdapter
+androidx.print.PrintHelper$PrintUriAdapter$1
+androidx.print.PrintHelper$PrintUriAdapter$1$1
+androidx.print.R
+androidx.slidingpanelayout.R
+androidx.slidingpanelayout.R$attr
+androidx.slidingpanelayout.R$color
+androidx.slidingpanelayout.R$dimen
+androidx.slidingpanelayout.R$drawable
+androidx.slidingpanelayout.R$id
+androidx.slidingpanelayout.R$integer
+androidx.slidingpanelayout.R$layout
+androidx.slidingpanelayout.R$string
+androidx.slidingpanelayout.R$style
+androidx.slidingpanelayout.R$styleable
+androidx.slidingpanelayout.widget.SlidingPaneLayout
+androidx.slidingpanelayout.widget.SlidingPaneLayout$AccessibilityDelegate
+androidx.slidingpanelayout.widget.SlidingPaneLayout$DisableLayerRunnable
+androidx.slidingpanelayout.widget.SlidingPaneLayout$DragHelperCallback
+androidx.slidingpanelayout.widget.SlidingPaneLayout$LayoutParams
+androidx.slidingpanelayout.widget.SlidingPaneLayout$PanelSlideListener
+androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState
+androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState$1
+androidx.slidingpanelayout.widget.SlidingPaneLayout$SimplePanelSlideListener
+androidx.swiperefreshlayout.R
+androidx.swiperefreshlayout.R$attr
+androidx.swiperefreshlayout.R$color
+androidx.swiperefreshlayout.R$dimen
+androidx.swiperefreshlayout.R$drawable
+androidx.swiperefreshlayout.R$id
+androidx.swiperefreshlayout.R$integer
+androidx.swiperefreshlayout.R$layout
+androidx.swiperefreshlayout.R$string
+androidx.swiperefreshlayout.R$style
+androidx.swiperefreshlayout.R$styleable
+androidx.swiperefreshlayout.widget.CircleImageView
+androidx.swiperefreshlayout.widget.CircleImageView$OvalShadow
+androidx.swiperefreshlayout.widget.CircularProgressDrawable
+androidx.swiperefreshlayout.widget.CircularProgressDrawable$1
+androidx.swiperefreshlayout.widget.CircularProgressDrawable$2
+androidx.swiperefreshlayout.widget.CircularProgressDrawable$ProgressDrawableSize
+androidx.swiperefreshlayout.widget.CircularProgressDrawable$Ring
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$1
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$2
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$3
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$4
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$5
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$6
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$7
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$8
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$OnChildScrollUpCallback
+androidx.swiperefreshlayout.widget.SwipeRefreshLayout$OnRefreshListener
+androidx.versionedparcelable.NonParcelField
+androidx.versionedparcelable.ParcelField
+androidx.versionedparcelable.ParcelImpl:
+    32:34:public ParcelImpl(androidx.versionedparcelable.VersionedParcelable)
+    44:44:public androidx.versionedparcelable.VersionedParcelable getVersionedParcel()
+androidx.versionedparcelable.ParcelUtils
+androidx.versionedparcelable.R
+androidx.versionedparcelable.VersionedParcel:
+    private static final java.lang.String TAG
+    private static final int EX_SECURITY
+    private static final int EX_BAD_PARCELABLE
+    private static final int EX_ILLEGAL_ARGUMENT
+    private static final int EX_NULL_POINTER
+    private static final int EX_ILLEGAL_STATE
+    private static final int EX_NETWORK_MAIN_THREAD
+    private static final int EX_UNSUPPORTED_OPERATION
+    private static final int EX_PARCELABLE
+    private static final int TYPE_VERSIONED_PARCELABLE
+    private static final int TYPE_PARCELABLE
+    private static final int TYPE_SERIALIZABLE
+    private static final int TYPE_STRING
+    private static final int TYPE_BINDER
+    protected abstract void writeByteArray(byte[],int,int)
+    protected abstract void writeLong(long)
+    protected abstract void writeFloat(float)
+    protected abstract void writeDouble(double)
+    protected abstract void writeStrongBinder(android.os.IBinder)
+    protected abstract void writeBoolean(boolean)
+    protected abstract void writeStrongInterface(android.os.IInterface)
+    protected abstract void writeBundle(android.os.Bundle)
+    protected abstract long readLong()
+    protected abstract float readFloat()
+    protected abstract double readDouble()
+    protected abstract android.os.IBinder readStrongBinder()
+    protected abstract android.os.Bundle readBundle()
+    protected abstract boolean readBoolean()
+    249:251:public void writeStrongInterface(android.os.IInterface,int)
+    258:260:public void writeBundle(android.os.Bundle,int)
+    267:269:public void writeBoolean(boolean,int)
+    289:291:public void writeByteArray(byte[],int,int,int)
+    307:309:public void writeLong(long,int)
+    316:318:public void writeFloat(float,int)
+    325:327:public void writeDouble(double,int)
+    343:345:public void writeStrongBinder(android.os.IBinder,int)
+    363:366:public boolean readBoolean(boolean,int)
+    383:386:public long readLong(long,int)
+    394:397:public float readFloat(float,int)
+    405:408:public double readDouble(double,int)
+    425:428:public android.os.IBinder readStrongBinder(android.os.IBinder,int)
+    457:460:public android.os.Bundle readBundle(android.os.Bundle,int)
+    468:470:public void writeByte(byte,int)
+    478:484:public void writeSize(android.util.Size,int)
+    492:498:public void writeSizeF(android.util.SizeF,int)
+    503:516:public void writeSparseBooleanArray(android.util.SparseBooleanArray,int)
+    521:523:public void writeBooleanArray(boolean[],int)
+    528:537:protected void writeBooleanArray(boolean[])
+    542:545:public boolean[] readBooleanArray(boolean[],int)
+    551:559:protected boolean[] readBooleanArray()
+    565:575:public void writeCharArray(char[],int)
+    580:591:public char[] readCharArray(char[],int)
+    597:599:public void writeIntArray(int[],int)
+    604:613:protected void writeIntArray(int[])
+    618:621:public int[] readIntArray(int[],int)
+    627:635:protected int[] readIntArray()
+    641:643:public void writeLongArray(long[],int)
+    648:657:protected void writeLongArray(long[])
+    662:665:public long[] readLongArray(long[],int)
+    671:679:protected long[] readLongArray()
+    685:687:public void writeFloatArray(float[],int)
+    692:701:protected void writeFloatArray(float[])
+    706:709:public float[] readFloatArray(float[],int)
+    715:723:protected float[] readFloatArray()
+    729:731:public void writeDoubleArray(double[],int)
+    736:745:protected void writeDoubleArray(double[])
+    750:753:public double[] readDoubleArray(double[],int)
+    759:767:protected double[] readDoubleArray()
+    781:782:public void writeSet(java.util.Set,int)
+    795:796:public void writeList(java.util.List,int)
+    799:838:private void writeCollection(java.util.Collection,int)
+    851:853:public void writeArray(java.lang.Object[],int)
+    858:902:protected void writeArray(java.lang.Object[])
+    905:916:private int getType(java.lang.Object)
+    963:965:public void writeSerializable(java.io.Serializable,int)
+    968:987:private void writeSerializable(java.io.Serializable)
+    1013:1053:public void writeException(java.lang.Exception,int)
+    1063:1064:protected void writeNoException()
+    1076:1084:public java.lang.Exception readException(java.lang.Exception,int)
+    1099:1100:private int readExceptionCode()
+    1104:1105:private java.lang.Exception readException(int,java.lang.String)
+    1114:1115:protected static java.lang.Throwable getRootCause(java.lang.Throwable)
+    1125:1143:private java.lang.Exception createException(int,java.lang.String)
+    1151:1154:public byte readByte(byte,int)
+    1162:1170:public android.util.Size readSize(android.util.Size,int)
+    1178:1186:public android.util.SizeF readSizeF(android.util.SizeF,int)
+    1195:1208:public android.util.SparseBooleanArray readSparseBooleanArray(android.util.SparseBooleanArray,int)
+    1224:1227:public java.util.Set readSet(java.util.Set,int)
+    1243:1246:public java.util.List readList(java.util.List,int)
+    1250:1292:private java.util.Collection readCollection(int,java.util.Collection)
+    1308:1311:public java.lang.Object[] readArray(java.lang.Object[],int)
+    1317:1360:protected java.lang.Object[] readArray(java.lang.Object[])
+    1396:1426:protected java.io.Serializable readSerializable()
+androidx.versionedparcelable.VersionedParcel$1
+androidx.versionedparcelable.VersionedParcel$ParcelException
+androidx.versionedparcelable.VersionedParcelParcel:
+    private static final boolean DEBUG
+    private static final java.lang.String TAG
+    129:135:public void writeByteArray(byte[],int,int)
+    144:145:public void writeLong(long)
+    149:150:public void writeFloat(float)
+    154:155:public void writeDouble(double)
+    164:165:public void writeStrongBinder(android.os.IBinder)
+    174:175:public void writeBoolean(boolean)
+    179:180:public void writeStrongInterface(android.os.IInterface)
+    184:185:public void writeBundle(android.os.Bundle)
+    194:194:public long readLong()
+    199:199:public float readFloat()
+    204:204:public double readDouble()
+    214:214:public android.os.IBinder readStrongBinder()
+    236:236:public android.os.Bundle readBundle()
+    241:241:public boolean readBoolean()
+androidx.versionedparcelable.VersionedParcelStream
+androidx.versionedparcelable.VersionedParcelStream$FieldBuffer
+androidx.versionedparcelable.VersionedParcelStream$InputBuffer
+androidx.versionedparcelable.VersionedParcelize
+androidx.viewpager.R
+androidx.viewpager.R$attr
+androidx.viewpager.R$color
+androidx.viewpager.R$dimen
+androidx.viewpager.R$drawable
+androidx.viewpager.R$id
+androidx.viewpager.R$integer
+androidx.viewpager.R$layout
+androidx.viewpager.R$string
+androidx.viewpager.R$style
+androidx.viewpager.R$styleable
+androidx.viewpager.widget.PagerAdapter
+androidx.viewpager.widget.PagerTabStrip
+androidx.viewpager.widget.PagerTabStrip$1
+androidx.viewpager.widget.PagerTabStrip$2
+androidx.viewpager.widget.PagerTitleStrip
+androidx.viewpager.widget.PagerTitleStrip$PageListener
+androidx.viewpager.widget.PagerTitleStrip$SingleLineAllCapsTransform
+androidx.viewpager.widget.ViewPager
+androidx.viewpager.widget.ViewPager$1
+androidx.viewpager.widget.ViewPager$2
+androidx.viewpager.widget.ViewPager$3
+androidx.viewpager.widget.ViewPager$4
+androidx.viewpager.widget.ViewPager$DecorView
+androidx.viewpager.widget.ViewPager$ItemInfo
+androidx.viewpager.widget.ViewPager$LayoutParams
+androidx.viewpager.widget.ViewPager$MyAccessibilityDelegate
+androidx.viewpager.widget.ViewPager$OnAdapterChangeListener
+androidx.viewpager.widget.ViewPager$OnPageChangeListener
+androidx.viewpager.widget.ViewPager$PageTransformer
+androidx.viewpager.widget.ViewPager$PagerObserver
+androidx.viewpager.widget.ViewPager$SavedState
+androidx.viewpager.widget.ViewPager$SavedState$1
+androidx.viewpager.widget.ViewPager$SimpleOnPageChangeListener
+androidx.viewpager.widget.ViewPager$ViewPositionComparator
+com.tekartik.sqflite.BuildConfig
+com.tekartik.sqflite.Constant
+com.tekartik.sqflite.R
+com.tekartik.sqflite.SqflitePlugin:
+    70:70:private android.content.Context getContext()
+    241:247:private java.util.List getStringQuerySqlArguments(java.util.List)
+com.tekartik.sqflite.dev.Debug:
+    11:11:public Debug()
+    21:22:public static void devLog(java.lang.String,java.lang.String)
+com.tekartik.sqflite.operation.ExecuteOperation:
+    31:31:public java.lang.String getMethod()
+com.tekartik.sqflite.operation.MethodCallOperation:
+    41:41:public java.lang.String getMethod()
+com.tekartik.sqflite.operation.Operation:
+    public abstract java.lang.String getMethod()
+    public abstract boolean getContinueOnError()
+com.tekartik.sqflite.operation.SqlErrorInfo:
+    11:11:public SqlErrorInfo()
+com.tekartik.sqflite.utils.SqlUtils
+no.eseven.mr.BuildConfig
+no.eseven.mr.R
+no.eseven.mr.R$attr
+no.eseven.mr.R$color
+no.eseven.mr.R$dimen
+no.eseven.mr.R$drawable
+no.eseven.mr.R$id
+no.eseven.mr.R$integer
+no.eseven.mr.R$layout
+no.eseven.mr.R$mipmap
+no.eseven.mr.R$string
+no.eseven.mr.R$style
+no.eseven.mr.R$styleable
+no.eseven.mr.R$xml
